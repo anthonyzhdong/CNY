@@ -1,0 +1,65 @@
+[
+  {
+    "d": "sat",
+    "when": "Sat 20 Feb · Time TBC",
+    "name": "Opening ceremony",
+    "place": "[Venue]",
+    "type": "Ceremony",
+    "img": "/images/photos/fan-dance.jpg",
+    "alt": "Dancers in white with painted fans"
+  },
+  {
+    "d": "sat",
+    "when": "Sat 20 Feb · Time TBC",
+    "name": "Lion dance",
+    "place": "[Venue]",
+    "type": "Performance",
+    "img": "/images/photos/lion-dance.jpg",
+    "alt": "A golden lion dancer in front of a crowd"
+  },
+  {
+    "d": "sat",
+    "when": "Sat 20 Feb · Time TBC",
+    "name": "Dragon dance",
+    "place": "[Venue]",
+    "type": "Performance",
+    "img": "/images/photos/dragon-dance.jpg",
+    "alt": "Performers swing a dragon on poles"
+  },
+  {
+    "d": "sat",
+    "when": "Sat 20 Feb · Time TBC",
+    "name": "Zodiac painting workshop",
+    "place": "[Venue]",
+    "type": "Workshop",
+    "img": "/images/photos/zodiac-paintings.jpg",
+    "alt": "Hand-painted zodiac cards on red paper"
+  },
+  {
+    "d": "sun",
+    "when": "Sun 21 Feb · All day",
+    "name": "Asian Market",
+    "place": "[Venue]",
+    "type": "Food",
+    "img": "/images/photos/buns.jpg",
+    "alt": "Pan-fried buns on a griddle"
+  },
+  {
+    "d": "sun",
+    "when": "Sun 21 Feb · Time TBC",
+    "name": "Taiko drumming",
+    "place": "[Venue]",
+    "type": "Performance",
+    "img": "/images/photos/taiko.jpg",
+    "alt": "Taiko drummers play large drums"
+  },
+  {
+    "d": "sun",
+    "when": "Sun 21 Feb · Time TBC",
+    "name": "Ribbon dance & kids’ stage",
+    "place": "[Venue]",
+    "type": "Family",
+    "img": "/images/photos/ribbon-dance.jpg",
+    "alt": "A young dancer twirls a silk ribbon"
+  }
+]

@@ -1,0 +1,95 @@
+LUNAR NEW YEAR FESTIVAL SITE: NOT WORKING YET
+Add to this as each page gets checked. Delete items once they're fixed.
+
+
+EVERY PAGE (header and footer)
+- Facebook and Instagram links go nowhere. Real URLs needed.
+- Footer "Sign up" button does nothing. No mailing list connected.
+- Footer "Contact us", "Accessibility" and "Privacy" links go nowhere. No pages or URLs yet.
+
+
+HOME
+- Where and Hours still show [Venue] and [Opening times].
+- Featured event dates still show bracketed placeholders, e.g. [Sat 20 · Time TBC].
+
+
+MEDIA
+- The three news list rows and the article page's More news links go nowhere (# for now).
+  Only the featured article has a full page.
+- "Older posts" link goes nowhere.
+- Media enquiries isn't set up: contact still shows [MEDIA CONTACT NAME], [EMAIL] and [PHONE],
+  and its "Email the media team" and "Download press kit" buttons go nowhere.
+
+
+MEDIA ARTICLE
+- Media enquiries box isn't set up: contact still shows [MEDIA CONTACT NAME], [PHONE] and [EMAIL].
+- Other news stories have no article pages yet.
+
+
+SPONSORS
+- Fill sponsors images: logo tiles only show names or [bracketed] placeholders. Real sponsor logos needed.
+- "Get the sponsorship pack" link goes nowhere.
+
+
+ARE YOU A SHEEP
+- Year of the Sheep section still has placeholder [2027 festival tie-in copy].
+
+
+EVENTS
+- The card grid from reference/events.html is the current layout. Change activeLayout in
+  components/event-layouts/index.tsx to swap. The five option layouts are still there; only
+  the timetable has been checked.
+- Times and venues still show [Time TBC] and [Venue].
+
+
+EVENT PAGES
+- Only the Lion dance has real copy. The other six show [Event description].
+- Performers, times, rain plan and accessibility details are still placeholders.
+- Add to calendar makes an all-day entry with [Venue] as the location. Add real start times and venues
+  once they're confirmed.
+- Hint from Next.js about navigation speed on this page and the media article. Run a production build
+  to see if it matters. Recommended fix: export const instant = false.
+
+
+FESTIVAL MAP
+- Add map PDF: "Download printable map (PDF)" goes nowhere.
+- Add map PDF to programmes and printables: the four printable PDF cards go nowhere.
+- Descriptions for map locations: Craft Stalls, Food Hall and Fun in the Park still show
+  placeholder [Zone description] and [What's here]. Only Cultural Entertainment has real copy.
+- "See the programme" goes to /events for every zone.
+- Venue still shows [Venue].
+- The map is a placeholder based on 2026. The 2027 map is coming.
+
+
+GALLERY ARCHIVE
+- Year tabs show the same seven placeholder images in a different order. Real photos needed per year.
+- Film videos don't play yet. Video IDs are missing, so the player shows a placeholder.
+- "HORSES — dance film" length still shows [Length].
+
+
+PHOTO GALLERY
+- Photographer credits still show [Photographer name].
+- Only seven different images, repeated. Real photos needed.
+- "Load more photos" button doesn't work yet: it stays hidden until there are more than 16 photos.
+
+
+FESTIVAL FILMS
+- Get the video IDs: films don't play until each one has a YouTube or Vimeo ID in data/films.json.
+  The player shows a placeholder until then.
+- "Watch on YouTube/Vimeo" links go nowhere until the video IDs are added.
+- "HORSES — dance film" length still shows [Length].
+
+
+GET INVOLVED
+- "Notify me" button does nothing. No mailing list connected.
+- "Register interest" link goes nowhere.
+- Registration dates still show [DATE].
+- Asian Market details still show [Venue] · [Date] · [Hours].
+- The notify box has no heading saying what people are signing up for.
+
+
+BEFORE LAUNCH
+- SF Pro font: Apple's licence generally doesn't allow self-hosting on a public website.
+  Buy a licence or swap to Inter or Outfit.
+- Generic G80 font: demo licence only. Both font files sit in public/fonts, so they
+  get published with the site.

@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Festival map — Option D</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<style>
+@font-face{font-family:'Generic G80';src:url('../public/fonts/generic-g80.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'SF Pro Display Web';src:url('../public/fonts/sf-pro-display-medium.otf') format('opentype');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;background:#FFFFFF}
+a{color:#2B2530;text-decoration:none}a:hover{color:#B5525A}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -10px}}
+.bob{animation:bob 4s ease-in-out infinite}
+.bob2{animation-duration:4.6s;animation-delay:-1.4s}
+.bob3{animation-duration:3.6s;animation-delay:-2.2s}
+@keyframes wave{0%,100%{translate:0 0}50%{translate:-10px 0}}
+.wave{animation:wave 6s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.bob,.wave{animation:none}}
+.zone{cursor:pointer;transition:transform .2s ease, box-shadow .2s ease}
+.zone:hover{transform:translateY(-3px)}
+@media (max-width: 720px){.deco-hide{display:none !important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div style="font-family: 'SF Pro Display Web', 'Outfit', system-ui, sans-serif; color: #2B2530; background: #FFFFFF; min-height: 100vh; display: flex; flex-direction: column; overflow: hidden">
+
+  <div class="band-hero" style="display: flow-root; background: linear-gradient(180deg, #EFEEE7 0%, #EFEEE7 55%, #FFFFFF 100%)">
+  <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 18px clamp(16px, 2.2vw, 32px)">
+    <a href="home.html" aria-label="Lunar New Year Festival — home" style="display: block; flex: 0 0 auto"><img src="../public/images/brand/sheep-mark.png" alt="Lunar New Year Festival" style="display: block; height: 56px; width: auto"></a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; font-size: 15px; margin-left: auto">
+      <a href="events.html" style="color: #6E6873">Events</a>
+      <a href="#" aria-current="page" style="padding: 2px 12px; border-radius: 6px; background: #A1DFD7; color: #2B2530">Festival map</a>
+      <a href="get-involved.html" style="color: #6E6873">Get involved</a>
+      <a href="about.html" style="color: #6E6873">About</a>
+      <a href="media.html" style="color: #6E6873">Media</a>
+      <a href="traditions.html" style="color: #6E6873">Traditions</a>
+    </nav>
+    <div style="display: flex; gap: 4px; margin-left: -8px">
+      <a href="#" aria-label="Facebook" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #2B2530"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"></path></svg></a>
+      <a href="#" aria-label="Instagram" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #2B2530"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg></a>
+    </div>
+  </header>
+
+  <section style="padding: clamp(64px, 9vw, 136px) clamp(16px, 2.2vw, 32px) clamp(56px, 7vw, 104px); display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 24px 48px">
+    <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px; max-width: 900px">
+      <span style="align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: #A1DFD7; font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em">Festival guide</span>
+      <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(56px, 9vw, 132px); line-height: 0.92; letter-spacing: -0.02em">Find your <em style="color: #B5525A">flock</em></h1>
+      <p style="margin: 0; max-width: 580px; font-size: clamp(19px, 1.7vw, 23px); line-height: 1.45; color: #4A4450">Tap a zone on the map to see what’s happening there. Layout shown is based on 2026 — the 2027 map is coming soon.</p>
+    </div>
+    <a href="#" style="display: inline-flex; align-items: center; min-height: 48px; padding: 0 22px; border-radius: 999px; background: #2B2530; color: #FFFFFF; font-size: 15px; font-weight: 500">Download printable map (PDF)</a>
+  </section>
+  </div>
+
+  <section style="padding: 0 clamp(16px, 2.2vw, 32px) clamp(88px, 11vw, 168px); display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start">
+    <div style="flex: 999 1 640px; min-width: 0; position: relative; aspect-ratio: 16 / 11; background: #F6F1E4; border-radius: 4px; overflow: hidden">
+      <div aria-hidden="true" class="wave" style="position: absolute; right: -6%; top: -10%; width: 44%; height: 130%; background: #A1DFD7; border-radius: 48% 0 0 52% / 40% 0 0 60%"></div>
+      <div aria-hidden="true" style="position: absolute; right: 6%; bottom: 8%; font-family: 'DM Mono', monospace; font-size: clamp(10px, 1vw, 13px); text-transform: uppercase; color: #1F3B3A; letter-spacing: 0.2em">Whanganui-a-Tara harbour</div>
+      <div aria-hidden="true" style="position: absolute; left: 8%; right: 36%; top: 52%; height: 0; border-top: 3px dashed #D7A7CA"></div>
+      <div aria-hidden="true" style="position: absolute; left: 30%; top: 22%; bottom: 20%; width: 0; border-left: 3px dashed #D7A7CA"></div>
+
+      
+        <button type="button" class="zone" onclick="" aria-pressed="true" aria-label="Cultural Entertainment" style="position: absolute; left: 6%; top: 12%; width: 22%; height: 34%; background: #FDAAB2; border: 3px solid #2B2530; border-radius: 4px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 4px; padding: clamp(8px, 1.2vw, 16px); text-align: left; font-family: inherit; color: #2B2530; box-shadow: 0 10px 24px rgba(43,37,48,0.18);">
+          <span style="font-family: 'DM Mono', monospace; font-size: clamp(10px, 1vw, 12px); text-transform: uppercase; opacity: 0.8">01</span>
+          <span style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(16px, 2vw, 28px); line-height: 1">Cultural Entertainment</span>
+        </button>
+      
+        <button type="button" class="zone" onclick="" aria-pressed="false" aria-label="Craft Stalls" style="position: absolute; left: 6%; top: 58%; width: 20%; height: 28%; background: #E8CEDE; border: 3px solid transparent; border-radius: 4px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 4px; padding: clamp(8px, 1.2vw, 16px); text-align: left; font-family: inherit; color: #2B2530;">
+          <span style="font-family: 'DM Mono', monospace; font-size: clamp(10px, 1vw, 12px); text-transform: uppercase; opacity: 0.8">02</span>
+          <span style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(16px, 2vw, 28px); line-height: 1">Craft Stalls</span>
+        </button>
+      
+        <button type="button" class="zone" onclick="" aria-pressed="false" aria-label="Food Hall" style="position: absolute; left: 34%; top: 12%; width: 24%; height: 30%; background: #F2BE74; border: 3px solid transparent; border-radius: 4px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 4px; padding: clamp(8px, 1.2vw, 16px); text-align: left; font-family: inherit; color: #2B2530;">
+          <span style="font-family: 'DM Mono', monospace; font-size: clamp(10px, 1vw, 12px); text-transform: uppercase; opacity: 0.8">03</span>
+          <span style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(16px, 2vw, 28px); line-height: 1">Food Hall</span>
+        </button>
+      
+        <button type="button" class="zone" onclick="" aria-pressed="false" aria-label="Fun in the Park" style="position: absolute; left: 34%; top: 56%; width: 26%; height: 30%; background: #D7EDAC; border: 3px solid transparent; border-radius: 4px; display: flex; flex-direction: column; justify-content: flex-end; align-items: flex-start; gap: 4px; padding: clamp(8px, 1.2vw, 16px); text-align: left; font-family: inherit; color: #2B2530;">
+          <span style="font-family: 'DM Mono', monospace; font-size: clamp(10px, 1vw, 12px); text-transform: uppercase; opacity: 0.8">04</span>
+          <span style="font-family: 'Instrument Serif', Georgia, serif; font-size: clamp(16px, 2vw, 28px); line-height: 1">Fun in the Park</span>
+        </button>
+      
+
+      <img src="../public/images/illustrations/sheep-tree.png" alt="" class="bob" style="position: absolute; left: 44%; top: 74%; width: 11%; height: auto; pointer-events: none">
+      <img src="../public/images/icons/lantern.svg" alt="" class="bob bob2" style="position: absolute; left: 3%; top: 76%; width: 10%; height: auto; pointer-events: none">
+      <img src="../public/images/illustrations/sheep-rainbow.png" alt="" class="bob bob3" style="position: absolute; left: 70%; top: 18%; width: 12%; height: auto; pointer-events: none">
+      <img src="../public/images/icons/chinese-knot.svg" alt="" class="bob bob2" style="position: absolute; left: 24%; top: 4%; width: 9%; height: auto; pointer-events: none">
+    </div>
+
+    <aside style="flex: 1 1 320px; max-width: 440px; display: flex; flex-direction: column; gap: 16px">
+      <div style="background: #FDAAB2; border-radius: 4px; padding: 28px; display: flex; flex-direction: column; gap: 14px; color: #2B2530">
+        <span style="font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase">01 · [Venue]</span>
+        <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1">Cultural Entertainment</h2>
+        <p style="margin: 0; font-size: 17px; line-height: 1.5">A five-hour cultural extravaganza showcasing the talents of Wellington’s community groups.</p>
+        <ul style="margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; font-size: 15px">
+          
+            <li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; border-radius: 999px; background: #2B2530"></span>Lion &amp; dragon dances</li>
+          
+            <li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; border-radius: 999px; background: #2B2530"></span>Taiko drumming</li>
+          
+            <li style="display: flex; gap: 10px; align-items: baseline"><span aria-hidden="true" style="flex: 0 0 auto; width: 6px; height: 6px; border-radius: 999px; background: #2B2530"></span>Traditional &amp; contemporary dance</li>
+          
+        </ul>
+        <a href="#" style="align-self: flex-start; display: inline-flex; align-items: center; min-height: 44px; padding: 0 18px; border-radius: 999px; background: #2B2530; color: #FFFFFF; font-size: 14px; font-weight: 500">See the programme</a>
+      </div>
+      <div style="background: #EFEEE7; border-radius: 4px; padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; font-size: 14px">
+        <span style="font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; color: #B5525A">Key</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 10px 18px">
+          <span style="display: inline-flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 4px; background: #FDAAB2"></span>Performances</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 4px; background: #F2BE74"></span>Food</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 4px; background: #E8CEDE"></span>Craft stalls</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 14px; height: 14px; border-radius: 4px; background: #D7EDAC"></span>Family zone</span>
+          <span style="display: inline-flex; align-items: center; gap: 8px"><span aria-hidden="true" style="width: 18px; border-top: 3px dashed #D7A7CA"></span>Walking route</span>
+        </div>
+      </div>
+    </aside>
+  </section>
+
+  <div class="band-pop" style="display: flow-root; background: #FDF1D8; padding: clamp(48px, 6vw, 88px) 0 clamp(24px, 3vw, 48px)">
+  <section style="margin: 0 clamp(16px, 2.2vw, 32px) clamp(88px, 11vw, 168px); padding-top: 40px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; gap: 32px">
+    <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(32px, 3.4vw, 48px)">Printable maps &amp; <em style="color: #B5525A">programmes</em></h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 24px">
+      <a href="#" style="background: #FDDCE1; border-radius: 4px; padding: 22px; display: flex; flex-direction: column; gap: 8px; min-height: 140px"><span style="font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; color: #B5525A">PDF</span><span style="font-size: 20px; font-weight: 500">Cultural Entertainment programme</span></a>
+      <a href="#" style="background: #E7F4CD; border-radius: 4px; padding: 22px; display: flex; flex-direction: column; gap: 8px; min-height: 140px"><span style="font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; color: #649276">PDF</span><span style="font-size: 20px; font-weight: 500">Fun in the Park map &amp; programme</span></a>
+      <a href="#" style="background: #F3E7EF; border-radius: 4px; padding: 22px; display: flex; flex-direction: column; gap: 8px; min-height: 140px"><span style="font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; color: #B5525A">PDF</span><span style="font-size: 20px; font-weight: 500">Craft stalls map</span></a>
+      <a href="#" style="background: #FBEBCF; border-radius: 4px; padding: 22px; display: flex; flex-direction: column; gap: 8px; min-height: 140px"><span style="font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; color: #8A5A10">PDF</span><span style="font-size: 20px; font-weight: 500">Food hall map</span></a>
+    </div>
+  </section>
+  </div>
+
+  <footer style="margin-top: auto; position: relative; background: #FFFFFF; padding: clamp(48px, 6vw, 88px) clamp(16px, 2.2vw, 32px) 20px; display: flex; flex-direction: column; gap: clamp(32px, 4vw, 56px)">
+    <img src="../public/images/icons/lantern.svg" alt="" class="bob deco-hide" style="position: absolute; right: clamp(16px, 4vw, 64px); top: -96px; width: 144px; height: auto">
+    <a href="home.html" aria-label="Lunar New Year Festival — home" style="display: block; align-self: center; width: 100%; max-width: 480px"><img src="../public/images/brand/festival-logo.png" alt="Lunar New Year Festival, 20–21 February 2027, sponsored by Golden Sun" style="display: block; width: 100%; height: auto"></a>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px 48px">
+      <div style="flex: 1 1 300px; max-width: 420px; display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 26px; line-height: 1.2">Celebrating cultural diversity in Wellington and building strong communities.</p>
+        <p style="margin: 0; font-size: 14px; color: #4A4450">Presented by the Asian Events Trust · Sponsored by Golden Sun</p>
+      </div>
+      <form style="flex: 1 1 300px; max-width: 420px; display: flex; flex-direction: column; gap: 10px">
+        <label for="footer-email" style="font-size: 15px; font-weight: 500">Get festival updates</label>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <input id="footer-email" type="email" placeholder="you@example.com" style="flex: 1 1 200px; min-width: 0; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid #2B2530; background: #EFEEE7; font-family: inherit; font-size: 15px">
+          <button type="button" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: none; background: #FDAAB2; color: #2B2530; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Sign up</button>
+        </div>
+      </form>
+      <nav aria-label="Footer" style="flex: 1 1 300px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; font-size: 15px; align-content: start">
+        <a href="events.html">Events</a>
+        <a href="festival-map.html">Festival map</a>
+        <a href="get-involved.html">Get involved</a>
+        <a href="are-you-a-sheep.html">Are you a sheep?</a>
+        <a href="traditions.html">Traditions</a>
+        <a href="gallery.html">Gallery archive</a>
+        <a href="festival-films.html">Festival films</a>
+        <a href="media.html">Media</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact us</a>
+      </nav>
+    </div>
+    <div style="border-top: 1px solid #D9D4DB; padding-top: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 13px; color: #4A4450">
+      <span>Te Whanganui-a-Tara Wellington · 2027</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: center">
+        <a href="#">Accessibility</a>
+        <a href="#">Privacy</a>
+        <a href="#" aria-label="Instagram" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg></a>
+        <a href="#" aria-label="Facebook" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+
+
+
+</body></html>

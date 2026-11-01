@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Photo gallery — Option D</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<style>
+@font-face{font-family:'Generic G80';src:url('../public/fonts/generic-g80.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'SF Pro Display Web';src:url('../public/fonts/sf-pro-display-medium.otf') format('opentype');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;background:#FFFFFF}
+a{color:#2B2530;text-decoration:none}a:hover{color:#B5525A}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+.bob{animation:bob 4s ease-in-out infinite}
+@media (prefers-reduced-motion: reduce){.bob{animation:none}}
+@media (max-width: 720px){.deco-hide{display:none !important}.g-wide{grid-column:span 2 !important}.g-gal{grid-template-columns:repeat(2,minmax(0,1fr)) !important;grid-auto-rows:150px !important}}
+.tile{position:relative;display:block;width:100%;padding:0;border:none;background:none;cursor:zoom-in;margin:0 0 20px;break-inside:avoid;text-align:left;font-family:inherit;color:#2B2530}
+.tile img{display:block;width:100%;height:auto;border-radius:4px;transition:filter .2s}
+.tile:hover img{filter:brightness(0.92)}
+.tile:focus-visible{outline:3px solid #B5525A;outline-offset:3px;border-radius:4px}
+.film{position:relative;padding:0;border:none;background:none;cursor:pointer;display:flex;flex-direction:column;gap:10px;text-align:left;font-family:inherit;color:#2B2530}
+.film .play{transition:transform .2s}
+.film:hover .play{transform:scale(1.08)}
+.film:focus-visible{outline:3px solid #B5525A;outline-offset:4px;border-radius:4px}
+.ctl{width:52px;height:52px;border-radius:999px;border:none;display:flex;align-items:center;justify-content:center;cursor:pointer;flex:0 0 auto}
+.ctl:focus-visible{outline:3px solid #FFFFFF;outline-offset:3px}
+@media (max-width: 720px){.masonry{columns:2 !important;column-gap:12px !important}.tile{margin-bottom:12px}.lb-side{display:none !important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div style="font-family: 'SF Pro Display Web', 'Outfit', system-ui, sans-serif; color: #2B2530; background: #FFFFFF; min-height: 100vh; display: flex; flex-direction: column; overflow: hidden">
+
+  <div class="band-hero" style="display: flow-root; background: linear-gradient(180deg, #EFEEE7 0%, #EFEEE7 55%, #FFFFFF 100%)">
+  <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 18px clamp(16px, 2.2vw, 32px)">
+    <a href="home.html" aria-label="Lunar New Year Festival — home" style="display: block; flex: 0 0 auto"><img src="../public/images/brand/sheep-mark.png" alt="Lunar New Year Festival" style="display: block; height: 56px; width: auto"></a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; font-size: 15px; margin-left: auto">
+      <a href="events.html" style="color: #6E6873">Events</a>
+      <a href="festival-map.html" style="color: #6E6873">Festival map</a>
+      <a href="get-involved.html" style="color: #6E6873">Get involved</a>
+      <a href="about.html" style="color: #6E6873">About</a>
+      <a href="media.html" style="color: #6E6873">Media</a>
+      <a href="traditions.html" style="color: #6E6873">Traditions</a>
+    </nav>
+    <div style="display: flex; gap: 4px; margin-left: -8px">
+      <a href="#" aria-label="Facebook" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #2B2530"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"></path></svg></a>
+      <a href="#" aria-label="Instagram" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #2B2530"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg></a>
+    </div>
+  </header>
+
+    <section style="position: relative; padding: clamp(64px, 9vw, 136px) clamp(16px, 2.2vw, 32px) clamp(48px, 6vw, 88px); display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-direction: column; gap: 24px; max-width: 900px">
+      <a href="gallery.html" style="align-self: flex-start; font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: #6E6873">← Gallery archive</a>
+      <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(56px, 9vw, 132px); line-height: 0.92; letter-spacing: -0.02em">Photo <em style="color: #B5525A">gallery</em></h1>
+      <p style="margin: 0; max-width: 560px; font-size: clamp(19px, 1.7vw, 23px); line-height: 1.45; color: #4A4450">Every festival, every lantern. Tap a photo to see it full size.</p>
+    </div>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 32px; padding-top: 24px; border-top: 1px solid #2B2530">
+      <div role="group" aria-label="Filter by type" style="display: flex; flex-wrap: wrap; gap: 8px">
+        
+          <button type="button" onclick="" aria-pressed="true" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: #2B2530; color: #FFFFFF; border: 1px solid #2B2530">All</button>
+        
+          <button type="button" onclick="" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #2B2530; border: 1px solid #2B2530">Performances</button>
+        
+          <button type="button" onclick="" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #2B2530; border: 1px solid #2B2530">Food</button>
+        
+          <button type="button" onclick="" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #2B2530; border: 1px solid #2B2530">Crafts</button>
+        
+          <button type="button" onclick="" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #2B2530; border: 1px solid #2B2530">Crowd</button>
+        
+      </div>
+      <div role="group" aria-label="Filter by year" style="display: flex; flex-wrap: wrap; gap: 8px">
+        
+          <button type="button" onclick="" aria-pressed="true" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: #2B2530; color: #FFFFFF; border: 1px solid #2B2530">All years</button>
+        
+          <button type="button" onclick="" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #2B2530; border: 1px solid #2B2530">2026</button>
+        
+          <button type="button" onclick="" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #2B2530; border: 1px solid #2B2530">2025</button>
+        
+          <button type="button" onclick="" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #2B2530; border: 1px solid #2B2530">2024</button>
+        
+          <button type="button" onclick="" aria-pressed="false" style="min-height: 44px; padding: 0 18px; border-radius: 8px; font-family: inherit; font-size: 15px; cursor: pointer; background: transparent; color: #2B2530; border: 1px solid #2B2530">2023</button>
+        
+      </div>
+    </div>
+    <p aria-live="polite" style="margin: 0; font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; color: #6E6873">16 photos</p>
+    <img src="../public/images/icons/red-packet.svg" alt="" class="bob deco-hide" style="position: absolute; right: clamp(24px, 8vw, 140px); top: 72px; width: 170px; height: auto">
+    <img src="../public/images/illustrations/sheep-standing.png" alt="" class="bob deco-hide" style="position: absolute; right: clamp(200px, 22vw, 360px); top: 210px; width: 120px; height: auto; animation-delay: -1.6s">
+  </section>
+  </div>
+
+  <section aria-label="Photos" style="padding: 0 clamp(16px, 2.2vw, 32px) clamp(88px, 11vw, 168px)">
+    <div class="masonry" style="columns: 4 260px; column-gap: 20px">
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Dragon dance on the waterfront">
+          <img src="../public/images/photos/dragon-dance.jpg" alt="Dragon dance on the waterfront" style="aspect-ratio: 16/10; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2026 · Performances</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Pan-fried buns at the market">
+          <img src="../public/images/photos/buns.jpg" alt="Pan-fried buns at the market" style="aspect-ratio: 4/5; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2026 · Food</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: A young dancer with a silk ribbon">
+          <img src="../public/images/photos/ribbon-dance.jpg" alt="A young dancer with a silk ribbon" style="aspect-ratio: 3/4; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2026 · Performances</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Hand-painted zodiac cards">
+          <img src="../public/images/photos/zodiac-paintings.jpg" alt="Hand-painted zodiac cards" style="aspect-ratio: 1/1; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2026 · Crafts</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Lion dance in front of a crowd">
+          <img src="../public/images/photos/lion-dance.jpg" alt="Lion dance in front of a crowd" style="aspect-ratio: 3/2; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2025 · Performances</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Taiko drummers on the main stage">
+          <img src="../public/images/photos/taiko.jpg" alt="Taiko drummers on the main stage" style="aspect-ratio: 4/5; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2025 · Performances</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Fan dancers in white">
+          <img src="../public/images/photos/fan-dance.jpg" alt="Fan dancers in white" style="aspect-ratio: 3/4; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2025 · Performances</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Dumplings fresh from the steamer">
+          <img src="../public/images/photos/buns.jpg" alt="Dumplings fresh from the steamer" style="aspect-ratio: 1/1; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2025 · Food</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Calligraphy at the craft stalls">
+          <img src="../public/images/photos/zodiac-paintings.jpg" alt="Calligraphy at the craft stalls" style="aspect-ratio: 4/5; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2024 · Crafts</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: The dragon winds through the crowd">
+          <img src="../public/images/photos/dragon-dance.jpg" alt="The dragon winds through the crowd" style="aspect-ratio: 4/3; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2024 · Crowd</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Lion dancers taking a bow">
+          <img src="../public/images/photos/lion-dance.jpg" alt="Lion dancers taking a bow" style="aspect-ratio: 4/5; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2024 · Crowd</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Ribbon dance on the lawn">
+          <img src="../public/images/photos/ribbon-dance.jpg" alt="Ribbon dance on the lawn" style="aspect-ratio: 16/10; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2024 · Performances</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Drummers warming up backstage">
+          <img src="../public/images/photos/taiko.jpg" alt="Drummers warming up backstage" style="aspect-ratio: 3/2; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2023 · Crowd</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Fans raised for the finale">
+          <img src="../public/images/photos/fan-dance.jpg" alt="Fans raised for the finale" style="aspect-ratio: 4/5; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2023 · Performances</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: The queue for bao">
+          <img src="../public/images/photos/buns.jpg" alt="The queue for bao" style="aspect-ratio: 3/4; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2023 · Food</span>
+        </button>
+      
+        <button type="button" class="tile" onclick="" aria-label="Open photo: Lantern-making workshop">
+          <img src="../public/images/photos/zodiac-paintings.jpg" alt="Lantern-making workshop" style="aspect-ratio: 1/1; object-fit: cover" loading="lazy">
+          <span style="display: block; padding-top: 8px; font-family: 'DM Mono', monospace; font-size: 11px; text-transform: uppercase; color: #6E6873">2023 · Crafts</span>
+        </button>
+      
+    </div>
+    <div style="display: flex; justify-content: center; padding-top: 40px">
+      <button type="button" style="min-height: 48px; padding: 0 28px; border-radius: 999px; border: 1px solid #2B2530; background: transparent; font-family: inherit; font-size: 15px; cursor: pointer">Load more photos</button>
+    </div>
+  </section>
+
+  <section style="margin: 0 clamp(16px, 2.2vw, 32px) clamp(88px, 11vw, 168px); padding: clamp(32px, 4vw, 56px); border-radius: 4px; background: #E7F4CD; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 24px">
+    <div style="display: flex; flex-direction: column; gap: 8px; max-width: 620px">
+      <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(30px, 3.2vw, 44px)">Got a great <em style="color: #B5525A">shot?</em></h2>
+      <p style="margin: 0; font-size: 17px; line-height: 1.5; color: #4A4450">Tag <strong style="font-weight: 500">#LunarNewYearWellington</strong> on Instagram and we might feature it here.</p>
+    </div>
+    <a href="festival-films.html" style="min-height: 48px; padding: 0 24px; border-radius: 999px; background: #2B2530; color: #FFFFFF; display: inline-flex; align-items: center; font-size: 15px">Watch the festival films →</a>
+  </section>
+
+  
+
+  <footer style="margin-top: auto; position: relative; background: #FFFFFF; border-top: 1px solid #EDE7EA; padding: clamp(48px, 6vw, 88px) clamp(16px, 2.2vw, 32px) 20px; display: flex; flex-direction: column; gap: clamp(32px, 4vw, 56px)">
+    <img src="../public/images/icons/lantern.svg" alt="" class="bob deco-hide" style="position: absolute; right: clamp(16px, 4vw, 64px); top: -96px; width: 144px; height: auto">
+    <a href="home.html" aria-label="Lunar New Year Festival — home" style="display: block; align-self: center; width: 100%; max-width: 480px"><img src="../public/images/brand/festival-logo.png" alt="Lunar New Year Festival, 20–21 February 2027, sponsored by Golden Sun" style="display: block; width: 100%; height: auto"></a>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px 48px">
+      <div style="flex: 1 1 300px; max-width: 420px; display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 26px; line-height: 1.2">Celebrating cultural diversity in Wellington and building strong communities.</p>
+        <p style="margin: 0; font-size: 14px; color: #4A4450">Presented by the Asian Events Trust · Sponsored by Golden Sun</p>
+      </div>
+      <form style="flex: 1 1 300px; max-width: 420px; display: flex; flex-direction: column; gap: 10px">
+        <label for="footer-email" style="font-size: 15px; font-weight: 500">Get festival updates</label>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <input id="footer-email" type="email" placeholder="you@example.com" style="flex: 1 1 200px; min-width: 0; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid #2B2530; background: #EFEEE7; font-family: inherit; font-size: 15px">
+          <button type="button" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: none; background: #FDAAB2; color: #2B2530; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Sign up</button>
+        </div>
+      </form>
+      <nav aria-label="Footer" style="flex: 1 1 300px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; font-size: 15px; align-content: start">
+        <a href="events.html">Events</a>
+        <a href="festival-map.html">Festival map</a>
+        <a href="get-involved.html">Get involved</a>
+        <a href="are-you-a-sheep.html">Are you a sheep?</a>
+        <a href="traditions.html">Traditions</a>
+        <a href="gallery.html">Gallery archive</a>
+        <a href="festival-films.html">Festival films</a>
+        <a href="media.html">Media</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact us</a>
+      </nav>
+    </div>
+    <div style="border-top: 1px solid #D9D4DB; padding-top: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 13px; color: #4A4450">
+      <span>Te Whanganui-a-Tara Wellington · 2027</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: center">
+        <a href="#">Accessibility</a>
+        <a href="#">Privacy</a>
+        <a href="#" aria-label="Instagram" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg></a>
+        <a href="#" aria-label="Facebook" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+
+
+
+</body></html>

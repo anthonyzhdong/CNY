@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en"><head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Are you a sheep? — Option D</title>
+
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500&amp;family=Instrument+Serif:ital@0;1&amp;family=DM+Mono:wght@400;500&amp;display=swap">
+<style>
+@font-face{font-family:'Generic G80';src:url('../public/fonts/generic-g80.otf') format('opentype');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:'SF Pro Display Web';src:url('../public/fonts/sf-pro-display-medium.otf') format('opentype');font-weight:100 900;font-style:normal;font-display:swap}
+body{margin:0;background:#FFFFFF}
+a{color:#2B2530;text-decoration:none}a:hover{color:#B5525A}
+@keyframes bob{0%,100%{translate:0 0}50%{translate:0 -12px}}
+.bob{animation:bob 4s ease-in-out infinite}
+.bob2{animation-duration:4.6s;animation-delay:-1.4s}
+@keyframes morph{0%,100%{border-radius:62% 38% 55% 45% / 48% 60% 40% 52%;translate:0 0}33%{border-radius:42% 58% 40% 60% / 58% 42% 56% 44%;translate:6px -8px}66%{border-radius:55% 45% 62% 38% / 40% 56% 44% 60%;translate:-6px 6px}}
+.morph{animation:morph 12s ease-in-out infinite}
+.m2{animation-duration:15s;animation-delay:-5s}
+.m3{animation-duration:18s;animation-delay:-9s}
+@media (prefers-reduced-motion: reduce){.bob,.morph{animation:none}}
+@media (max-width: 720px){.deco-hide{display:none !important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div style="font-family: 'SF Pro Display Web', 'Outfit', system-ui, sans-serif; color: #2B2530; background: #FFFFFF; min-height: 100vh; display: flex; flex-direction: column; overflow: hidden">
+
+  <div class="band-hero" style="display: flow-root; background: linear-gradient(180deg, #EFEEE7 0%, #EFEEE7 55%, #FFFFFF 100%)">
+  <header style="display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px 24px; padding: 18px clamp(16px, 2.2vw, 32px)">
+    <a href="home.html" aria-label="Lunar New Year Festival — home" style="display: block; flex: 0 0 auto"><img src="../public/images/brand/sheep-mark.png" alt="Lunar New Year Festival" style="display: block; height: 56px; width: auto"></a>
+    <nav aria-label="Main" style="display: flex; flex-wrap: wrap; align-items: center; gap: 4px 22px; font-size: 15px; margin-left: auto">
+      <a href="events.html" style="color: #6E6873">Events</a>
+      <a href="festival-map.html" style="color: #6E6873">Festival map</a>
+      <a href="get-involved.html" style="color: #6E6873">Get involved</a>
+      <a href="about.html" style="color: #6E6873">About</a>
+      <a href="media.html" style="color: #6E6873">Media</a>
+      <a href="traditions.html" style="color: #6E6873">Traditions</a>
+    </nav>
+    <div style="display: flex; gap: 4px; margin-left: -8px">
+      <a href="#" aria-label="Facebook" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #2B2530"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"></path></svg></a>
+      <a href="#" aria-label="Instagram" style="width: 40px; height: 40px; display: flex; align-items: center; justify-content: center; color: #2B2530"><svg aria-hidden="true" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg></a>
+    </div>
+  </header>
+
+  <section style="padding: clamp(64px, 9vw, 136px) clamp(16px, 2.2vw, 32px) clamp(72px, 9vw, 136px); display: flex; flex-wrap: wrap; align-items: center; gap: 32px">
+    <div style="flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 24px; max-width: 900px">
+      <span style="align-self: flex-start; padding: 6px 14px; border-radius: 999px; background: #D7EDAC; font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em">Year of the Sheep · 2027</span>
+      <h1 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(56px, 9vw, 132px); line-height: 0.92; letter-spacing: -0.02em">Are you a <em style="color: #B5525A">sheep?</em></h1>
+      <p style="margin: 0; max-width: 560px; font-size: clamp(19px, 1.7vw, 23px); line-height: 1.45; color: #4A4450">Find your zodiac animal and meet the gentle, creative sign leading us into 2027.</p>
+    </div>
+    <div class="deco-hide" aria-hidden="true" style="flex: 1 1 260px; max-width: 360px; position: relative; aspect-ratio: 1 / 1">
+      <div class="morph" style="position: absolute; left: 6%; top: 14%; width: 66%; height: 62%; background: #FDAAB2; filter: blur(34px); opacity: 0.9"></div>
+      <div class="morph m2" style="position: absolute; right: 0; top: 34%; width: 52%; height: 50%; background: #FDAAB2; filter: blur(38px); opacity: 0.6"></div>
+      <div class="morph m3" style="position: absolute; left: 18%; bottom: 0; width: 48%; height: 36%; background: #FDAAB2; filter: blur(36px); opacity: 0.5"></div>
+      <img src="../public/images/illustrations/sheep-standing.png" alt="" class="bob" style="position: absolute; left: 12%; top: 4%; width: 76%; height: auto">
+    </div>
+  </section>
+  </div>
+
+  <section aria-labelledby="zodiac-heading" style="margin: 0 clamp(16px, 2.2vw, 32px); display: flex; flex-direction: column; gap: 40px">
+    <div style="display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 12px 32px">
+      <h2 id="zodiac-heading" style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: clamp(40px, 4.6vw, 64px); line-height: 1">Find your <em style="color: #B5525A">animal</em></h2>
+      <p style="margin: 0; max-width: 420px; font-size: 14px; line-height: 1.5; color: #4A4450">Look for your birth year. Born in January or early February? You may belong to the sign before — the new year starts with the new moon.</p>
+    </div>
+    <ol style="list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(170px, 1fr)); gap: 32px 24px">
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">01</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Rat</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1972 · 1984 · 1996 · 2008 · 2020</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">02</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Ox</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1973 · 1985 · 1997 · 2009 · 2021</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">03</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Tiger</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1974 · 1986 · 1998 · 2010 · 2022</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">04</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Rabbit</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1975 · 1987 · 1999 · 2011 · 2023</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">05</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Dragon</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1976 · 1988 · 2000 · 2012 · 2024</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">06</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Snake</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1977 · 1989 · 2001 · 2013 · 2025</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">07</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Horse</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1978 · 1990 · 2002 · 2014 · 2026</span></span>
+        </li>
+        <li style="grid-column: span 2; position: relative; min-height: 220px; padding: 22px 24px; background: #FDAAB2; border-radius: 4px; display: flex; flex-direction: column; justify-content: space-between; gap: 10px; overflow: hidden">
+          <img src="../public/images/illustrations/sheep-standing.png" alt="" class="bob" style="position: absolute; right: 4%; top: 8%; width: 38%; max-width: 170px; height: auto">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #2B2530">08 · This year</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-style: italic; font-size: 52px; line-height: 0.95">Sheep</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #2B2530; max-width: 60%">1979 · 1991 · 2003 · 2015 · 2027</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">09</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Monkey</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1980 · 1992 · 2004 · 2016</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">10</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Rooster</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1981 · 1993 · 2005 · 2017</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">11</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Dog</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1982 · 1994 · 2006 · 2018</span></span>
+        </li>
+        <li style="min-height: 220px; padding: 22px 20px; border-top: 1px solid #2B2530; display: flex; flex-direction: column; justify-content: space-between; gap: 10px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; color: #B5525A">12</span>
+          <span style="display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Instrument Serif', Georgia, serif; font-size: 36px; line-height: 1">Pig</span><span style="font-family: 'DM Mono', monospace; font-size: 12px; line-height: 1.5; color: #4A4450">1983 · 1995 · 2007 · 2019</span></span>
+        </li>
+    </ol>
+  </section>
+
+  <div class="band-pop" style="display: flow-root; background: #E4F4F0; padding: clamp(48px, 6vw, 88px) 0 clamp(24px, 3vw, 48px)">
+  <section style="padding: clamp(104px, 12vw, 192px) clamp(16px, 2.2vw, 32px) 0; display: flex; flex-wrap: wrap; gap: 24px 64px">
+    <div style="flex: 1 1 220px; max-width: 320px; display: flex; flex-direction: column; gap: 10px">
+      <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #A1DFD7; font-family: 'DM Mono', monospace; font-size: 12px">01</span>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.05">The lunar calendar</h2>
+    </div>
+    <div style="flex: 999 1 520px; min-width: 0; max-width: 680px; font-size: 19px; line-height: 1.6; color: #3A3340">
+      <p style="margin: 0">Lunar New Year isn’t on the same date each year. It follows the lunar calendar, so the new year begins with the new moon and the date changes annually — usually between mid-January and late February.</p>
+    </div>
+  </section>
+  </div>
+
+  <section style="padding: clamp(88px, 11vw, 168px) clamp(16px, 2.2vw, 32px) clamp(104px, 12vw, 192px); display: flex; flex-wrap: wrap; gap: 24px 64px">
+    <div style="flex: 1 1 220px; max-width: 320px; display: flex; flex-direction: column; gap: 10px">
+      <span style="align-self: flex-start; padding: 4px 12px; border-radius: 999px; background: #FDAAB2; font-family: 'DM Mono', monospace; font-size: 12px">02</span>
+      <h2 style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-weight: 400; font-size: 40px; line-height: 1.05">Year of the Sheep</h2>
+      <img src="../public/images/illustrations/sheep-lying.png" alt="" class="bob bob2 deco-hide" style="margin-top: 24px; width: 170px; height: auto">
+    </div>
+    <div style="flex: 999 1 520px; min-width: 0; max-width: 680px; display: flex; flex-direction: column; gap: 20px; font-size: 19px; line-height: 1.6; color: #3A3340">
+      <p style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 30px; line-height: 1.2; color: #2B2530">6 February 2027 to 25 January 2028</p>
+      <p style="margin: 0">2027 is the year of the Fire Sheep (sometimes called the Goat). The five elements — Wood, Fire, Earth, Metal and Water — rotate through the zodiac, and this year the Sheep is paired with Fire, adding warmth and spark to a famously gentle sign.</p>
+      <p style="margin: 0">[2027 festival tie-in copy — how the Sheep’s qualities come to life across the programme.]</p>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px; margin-top: 12px">
+        <div style="background: #E7F4CD; border-radius: 4px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; color: #3D5A2A">Years of the Sheep</span>
+          <span style="font-size: 17px; line-height: 1.5">1931, 1943, 1955, 1967, 1979, 1991, 2003, 2015, 2027</span>
+        </div>
+        <div style="background: #FDDCE1; border-radius: 4px; padding: 22px; display: flex; flex-direction: column; gap: 8px">
+          <span style="font-family: 'DM Mono', monospace; font-size: 12px; text-transform: uppercase; color: #B5525A">Characteristics</span>
+          <span style="font-size: 17px; line-height: 1.5">Gentle, creative and kind-hearted. Sheep value calm, harmony and the company of close friends.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer style="margin-top: auto; position: relative; background: #FFFFFF; border-top: 1px solid #EDE7EA; padding: clamp(48px, 6vw, 88px) clamp(16px, 2.2vw, 32px) 20px; display: flex; flex-direction: column; gap: clamp(32px, 4vw, 56px)">
+    <img src="../public/images/icons/lantern.svg" alt="" class="bob deco-hide" style="position: absolute; right: clamp(16px, 4vw, 64px); top: -96px; width: 144px; height: auto">
+    <a href="home.html" aria-label="Lunar New Year Festival — home" style="display: block; align-self: center; width: 100%; max-width: 480px"><img src="../public/images/brand/festival-logo.png" alt="Lunar New Year Festival, 20–21 February 2027, sponsored by Golden Sun" style="display: block; width: 100%; height: auto"></a>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 32px 48px">
+      <div style="flex: 1 1 300px; max-width: 420px; display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-family: 'Instrument Serif', Georgia, serif; font-size: 26px; line-height: 1.2">Celebrating cultural diversity in Wellington and building strong communities.</p>
+        <p style="margin: 0; font-size: 14px; color: #4A4450">Presented by the Asian Events Trust · Sponsored by Golden Sun</p>
+      </div>
+      <form style="flex: 1 1 300px; max-width: 420px; display: flex; flex-direction: column; gap: 10px">
+        <label for="footer-email" style="font-size: 15px; font-weight: 500">Get festival updates</label>
+        <div style="display: flex; flex-wrap: wrap; gap: 8px">
+          <input id="footer-email" type="email" placeholder="you@example.com" style="flex: 1 1 200px; min-width: 0; min-height: 44px; padding: 0 16px; border-radius: 999px; border: 1px solid #2B2530; background: #EFEEE7; font-family: inherit; font-size: 15px">
+          <button type="button" style="min-height: 44px; padding: 0 20px; border-radius: 999px; border: none; background: #FDAAB2; color: #2B2530; font-family: inherit; font-size: 15px; font-weight: 500; cursor: pointer">Sign up</button>
+        </div>
+      </form>
+      <nav aria-label="Footer" style="flex: 1 1 300px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 24px; font-size: 15px; align-content: start">
+        <a href="events.html">Events</a>
+        <a href="festival-map.html">Festival map</a>
+        <a href="get-involved.html">Get involved</a>
+        <a href="are-you-a-sheep.html">Are you a sheep?</a>
+        <a href="traditions.html">Traditions</a>
+        <a href="gallery.html">Gallery archive</a>
+        <a href="festival-films.html">Festival films</a>
+        <a href="media.html">Media</a>
+        <a href="sponsors.html">Sponsors</a>
+        <a href="about.html">About</a>
+        <a href="#">Contact us</a>
+      </nav>
+    </div>
+    <div style="border-top: 1px solid #D9D4DB; padding-top: 14px; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 8px 24px; font-size: 13px; color: #4A4450">
+      <span>Te Whanganui-a-Tara Wellington · 2027</span>
+      <div style="display: flex; flex-wrap: wrap; gap: 4px 18px; align-items: center">
+        <a href="#">Accessibility</a>
+        <a href="#">Privacy</a>
+        <a href="#" aria-label="Instagram" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.5" r="0.6" fill="currentColor"></circle></svg></a>
+        <a href="#" aria-label="Facebook" style="width: 44px; height: 44px; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h-2.5A3.5 3.5 0 0 0 9 6.5V10H6.5v3.5H9V21h3.5v-7.5H15l.5-3.5h-3V7a1 1 0 0 1 1-1H15z"></path></svg></a>
+      </div>
+    </div>
+  </footer>
+</div>
+</div>
+
+
+
+</body></html>

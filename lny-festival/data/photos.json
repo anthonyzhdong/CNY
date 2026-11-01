@@ -1,0 +1,130 @@
+[
+  {
+    "key": "dragon",
+    "src": "/images/photos/dragon-dance.jpg",
+    "alt": "Dragon dance on the waterfront",
+    "cat": "Performances",
+    "year": "2026",
+    "ratio": "16/10"
+  },
+  {
+    "key": "buns",
+    "src": "/images/photos/buns.jpg",
+    "alt": "Pan-fried buns at the market",
+    "cat": "Food",
+    "year": "2026",
+    "ratio": "4/5"
+  },
+  {
+    "key": "ribbon",
+    "src": "/images/photos/ribbon-dance.jpg",
+    "alt": "A young dancer with a silk ribbon",
+    "cat": "Performances",
+    "year": "2026",
+    "ratio": "3/4"
+  },
+  {
+    "key": "zodiac",
+    "src": "/images/photos/zodiac-paintings.jpg",
+    "alt": "Hand-painted zodiac cards",
+    "cat": "Crafts",
+    "year": "2026",
+    "ratio": "1/1"
+  },
+  {
+    "key": "lion",
+    "src": "/images/photos/lion-dance.jpg",
+    "alt": "Lion dance in front of a crowd",
+    "cat": "Performances",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "key": "taiko",
+    "src": "/images/photos/taiko.jpg",
+    "alt": "Taiko drummers on the main stage",
+    "cat": "Performances",
+    "year": "2025",
+    "ratio": "4/5"
+  },
+  {
+    "key": "fan",
+    "src": "/images/photos/fan-dance.jpg",
+    "alt": "Fan dancers in white",
+    "cat": "Performances",
+    "year": "2025",
+    "ratio": "3/4"
+  },
+  {
+    "key": "buns",
+    "src": "/images/photos/buns.jpg",
+    "alt": "Dumplings fresh from the steamer",
+    "cat": "Food",
+    "year": "2025",
+    "ratio": "1/1"
+  },
+  {
+    "key": "zodiac",
+    "src": "/images/photos/zodiac-paintings.jpg",
+    "alt": "Calligraphy at the craft stalls",
+    "cat": "Crafts",
+    "year": "2024",
+    "ratio": "4/5"
+  },
+  {
+    "key": "dragon",
+    "src": "/images/photos/dragon-dance.jpg",
+    "alt": "The dragon winds through the crowd",
+    "cat": "Crowd",
+    "year": "2024",
+    "ratio": "4/3"
+  },
+  {
+    "key": "lion",
+    "src": "/images/photos/lion-dance.jpg",
+    "alt": "Lion dancers taking a bow",
+    "cat": "Crowd",
+    "year": "2024",
+    "ratio": "4/5"
+  },
+  {
+    "key": "ribbon",
+    "src": "/images/photos/ribbon-dance.jpg",
+    "alt": "Ribbon dance on the lawn",
+    "cat": "Performances",
+    "year": "2024",
+    "ratio": "16/10"
+  },
+  {
+    "key": "taiko",
+    "src": "/images/photos/taiko.jpg",
+    "alt": "Drummers warming up backstage",
+    "cat": "Crowd",
+    "year": "2023",
+    "ratio": "3/2"
+  },
+  {
+    "key": "fan",
+    "src": "/images/photos/fan-dance.jpg",
+    "alt": "Fans raised for the finale",
+    "cat": "Performances",
+    "year": "2023",
+    "ratio": "4/5"
+  },
+  {
+    "key": "buns",
+    "src": "/images/photos/buns.jpg",
+    "alt": "The queue for bao",
+    "cat": "Food",
+    "year": "2023",
+    "ratio": "3/4"
+  },
+  {
+    "key": "zodiac",
+    "src": "/images/photos/zodiac-paintings.jpg",
+    "alt": "Lantern-making workshop",
+    "cat": "Crafts",
+    "year": "2023",
+    "ratio": "1/1"
+  }
+]
