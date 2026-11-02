@@ -1,22 +1,12 @@
 import type { Metadata } from "next";
-import { DM_Mono, Instrument_Serif, Outfit } from "next/font/google";
-import localFont from "next/font/local";
+import { DM_Mono, Instrument_Serif, Inter } from "next/font/google";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import "./globals.css";
 
-// Licence check needed before launch: see DESIGN.md §2.
-const sfPro = localFont({
-  src: "../public/fonts/sf-pro-display-medium.otf",
-  weight: "100 900",
-  variable: "--font-sf-pro",
-});
-
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-  weight: ["400", "500"],
-  preload: false,
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin", "latin-ext"],
 });
 
 const instrumentSerif = Instrument_Serif({
@@ -55,9 +45,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${sfPro.variable} ${outfit.variable} ${instrumentSerif.variable} ${dmMono.variable}`}
+      className={`${inter.variable} ${instrumentSerif.variable} ${dmMono.variable}`}
     >
-      <body className="relative flex min-h-screen flex-col overflow-x-clip font-sans">
+      <body className="relative flex min-h-screen flex-col overflow-x-clip font-sans font-medium">
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:left-gutter focus:top-2 focus:z-30 focus:rounded-sm focus:bg-white focus:px-4 focus:py-2"

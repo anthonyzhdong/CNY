@@ -66,7 +66,7 @@ export function SiteHeader() {
         />
       </Link>
 
-      <nav aria-label="Main" className="ml-auto flex items-center gap-x-[22px] text-[15px] mobile:hidden">
+      <nav aria-label="Main" className="ml-auto flex items-center gap-x-[clamp(10px,1.6vw,22px)] whitespace-nowrap text-[15px] mobile:hidden">
         <NavLinks />
       </nav>
       <div className="mobile:hidden">

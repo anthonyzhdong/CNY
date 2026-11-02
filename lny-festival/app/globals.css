@@ -3,7 +3,7 @@
 @custom-variant mobile (@media (max-width: 720px));
 
 @theme inline {
-  --font-sans: var(--font-sf-pro), var(--font-outfit), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
   --font-serif: var(--font-instrument-serif), Georgia, serif;
   --font-mono: var(--font-dm-mono);
 }

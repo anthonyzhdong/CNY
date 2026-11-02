@@ -96,7 +96,6 @@ STILL TO DO IN DEVELOPMENT
 - Test the mobile menu.
 - Final check of Home, which has changed since it was last reviewed.
 - Finish the mobile check on pages only viewed part of the way down.
-- Make the first Git commit. Nothing is saved in version control yet.
 - Update DESIGN.md and CLAUDE.md to say the card grid was chosen for /events.
 - Decide whether to keep the five unused event layouts.
 - Set the live site address for link previews once the domain is known.
@@ -104,7 +103,9 @@ STILL TO DO IN DEVELOPMENT
 
 
 BEFORE LAUNCH
-- SF Pro font: Apple's licence generally doesn't allow self-hosting on a public website.
-  Buy a licence or swap to Inter or Outfit.
-- Generic G80 font: demo licence only. Both font files sit in public/fonts, so they
-  get published with the site.
+- Generic G80 font: demo licence only, and its lettering is baked into festival-logo.png. Buy the
+  retail licence or replace the logo lettering before launch.
+- The SF Pro and Generic G80 font files are out of the site, in the removed-fonts folder next to
+  lny-festival. Delete that folder once you've confirmed you don't need it, and don't commit it.
+- Both font files are still in Git history from the first commit, which was pushed to GitHub.
+  Decide whether to remove them from history.
