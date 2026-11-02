@@ -6,7 +6,7 @@ import { footerNav, social } from "@/lib/site";
 
 export function SiteFooter() {
   return (
-    <footer className="relative mt-auto flex flex-col gap-[clamp(32px,4vw,56px)] border-t border-line-footer bg-white px-gutter pb-5 pt-[clamp(48px,6vw,88px)]">
+    <footer className="relative mt-auto flex flex-col gap-[clamp(32px,4vw,56px)] bg-white px-gutter pb-5 pt-[clamp(48px,6vw,88px)]">
       <Illustration
         name="lantern"
         className="absolute right-[clamp(16px,4vw,64px)] top-[-96px] w-36 mobile:hidden"
@@ -38,30 +38,9 @@ export function SiteFooter() {
           </p>
         </div>
 
-        {/* Not connected to a mailing list yet. */}
-        <form className="flex max-w-[420px] flex-[1_1_300px] flex-col gap-2.5">
-          <label htmlFor="footer-email" className="text-[15px] font-medium">
-            Get festival updates
-          </label>
-          <div className="flex flex-wrap gap-2">
-            <input
-              id="footer-email"
-              type="email"
-              placeholder="you@example.com"
-              className="min-h-[46px] min-w-0 flex-[1_1_200px] rounded-full border border-ink bg-beige px-4 text-[15px]"
-            />
-            <button
-              type="button"
-              className="min-h-11 rounded-full bg-pink px-5 text-[15px] font-medium text-ink"
-            >
-              Sign up
-            </button>
-          </div>
-        </form>
-
         <nav
           aria-label="Footer"
-          className="grid flex-[1_1_300px] grid-cols-2 content-start gap-x-6 gap-y-2.5 text-[15px]"
+          className="grid max-w-[440px] flex-[1_1_300px] grid-cols-2 content-start gap-x-6 gap-y-2.5 text-[15px]"
         >
           {footerNav.map(({ href, label }) => (
             <Link key={label} href={href}>

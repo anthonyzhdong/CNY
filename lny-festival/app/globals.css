@@ -18,7 +18,6 @@
   --color-beige: #efeee7;
   --color-white: #ffffff;
   --color-line: #d9d4db;
-  --color-line-footer: #ede7ea;
   --color-mint-band: #e4f4f0;
   --color-butter-band: #fdf1d8;
   --color-pink: #fdaab2;
@@ -106,13 +105,12 @@
   background: linear-gradient(180deg, #efeee7 0%, #efeee7 50%, #ffffff 100%);
 }
 
-@utility bg-hero-fade-fixed {
-  background: linear-gradient(180deg, #efeee7 0px, #efeee7 420px, #ffffff 760px);
+@utility bg-hero-fade-long {
+  background: linear-gradient(180deg, #efeee7 0%, #efeee7 60%, #ffffff 100%);
 }
 
-/* The footer's top border only shows when the section above it is white. */
-body:has([data-last-band]) footer {
-  border-top-width: 0;
+@utility bg-hero-fade-fixed {
+  background: linear-gradient(180deg, #efeee7 0px, #efeee7 420px, #ffffff 760px);
 }
 
 @keyframes bob {

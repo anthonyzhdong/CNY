@@ -42,7 +42,7 @@ export default function FestivalMap() {
 
       <ZoneMap />
 
-      <Band tone="butter" last>
+      <Band tone="butter">
         <section className="mx-gutter mb-[clamp(88px,11vw,168px)] flex flex-col gap-8 border-t border-ink pt-10">
           <h2 className="font-serif text-[clamp(32px,3.4vw,48px)]">
             Printable maps &amp; <em className="text-red">programmes</em>

@@ -130,7 +130,7 @@ export default async function EventDetail({ params }: PageProps<"/events/[slug]"
         </aside>
       </section>
 
-      <Band tone="butter" last>
+      <Band tone="butter">
         <section className="mx-gutter mb-[clamp(56px,6vw,88px)] flex flex-col gap-6 border-t border-ink pt-7">
           <div className="flex flex-wrap items-end justify-between gap-3">
             <h2 className="font-serif text-[clamp(32px,3.4vw,48px)]">

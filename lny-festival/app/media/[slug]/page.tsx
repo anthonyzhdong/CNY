@@ -133,7 +133,7 @@ export default async function MediaArticle({ params }: PageProps<"/media/[slug]"
         </article>
       </Band>
 
-      <Band tone="mint" last>
+      <Band tone="mint">
         <section className="mx-gutter mb-[clamp(56px,6vw,88px)] flex flex-col gap-5 border-t border-ink pt-7">
           <Tag className="bg-lilac">More news</Tag>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-x-10 gap-y-6">

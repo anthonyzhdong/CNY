@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import { Band } from "@/components/Band";
-import { Illustration } from "@/components/Decoration";
 import { PageHero } from "@/components/PageHero";
 import { Photo } from "@/components/Photo";
-import { PillLink, Tag } from "@/components/Pill";
+import { Tag } from "@/components/Pill";
 
 export const metadata: Metadata = {
   title: "Get involved",
@@ -59,18 +58,6 @@ const rows: Row[] = [
     text: "The festival is a stage for local community groups. Dance, music, martial arts and more — show Wellington what your group can do.",
     action: opens,
   },
-  {
-    label: "03 · Volunteers",
-    colour: "bg-mint",
-    src: "/images/photos/dragon-dance.jpg",
-    alt: "Volunteers carry a dragon on poles",
-    text: "More than 3,500 volunteers give their time and skills each year. Be part of the team that makes the festival happen.",
-    action: (
-      <PillLink href="#" variant="solid" className="flex-none">
-        Register interest
-      </PillLink>
-    ),
-  },
 ];
 
 export default function GetInvolved() {
@@ -118,27 +105,6 @@ export default function GetInvolved() {
           ))}
         </ol>
       </Band>
-
-      {/* Not connected to a mailing list yet. */}
-      <section className="relative mx-gutter my-[clamp(56px,7vw,104px)] flex flex-wrap items-center justify-between gap-5 rounded-sm bg-mint p-[clamp(32px,4vw,56px)]">
-        <form className="relative z-10 flex max-w-[520px] flex-[1_1_340px] flex-wrap gap-2">
-          <input
-            type="email"
-            aria-label="Email address"
-            placeholder="you@example.com"
-            className="min-h-12 min-w-0 flex-[1_1_200px] rounded-full bg-beige px-[18px] text-[15px]"
-          />
-          <button type="button" className="min-h-12 rounded-full bg-ink px-[22px] text-[15px] font-medium text-white">
-            Notify me
-          </button>
-        </form>
-        <Illustration
-          name="firecracker"
-          className="absolute left-[44%] top-[-96px] w-[165px] mobile:hidden"
-          sizes="165px"
-          bob={2}
-        />
-      </section>
     </>
   );
 }

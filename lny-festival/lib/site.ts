@@ -24,8 +24,7 @@ export const footerNav: NavItem[] = [
   { href: "#", label: "Contact us" }, // [Contact URL TBC]
 ];
 
-// [Real URLs TBC]
 export const social = {
-  facebook: "#",
-  instagram: "#",
+  facebook: "https://www.facebook.com/lnywellington",
+  instagram: "https://www.instagram.com/lnywellington",
 };

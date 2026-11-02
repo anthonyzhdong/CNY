@@ -3,8 +3,6 @@ Add to this as each page gets checked. Delete items once they're fixed.
 
 
 EVERY PAGE (header and footer)
-- Facebook and Instagram links go nowhere. Real URLs needed.
-- Footer "Sign up" button does nothing. No mailing list connected.
 - Footer "Contact us", "Accessibility" and "Privacy" links go nowhere. No pages or URLs yet.
 
 
@@ -81,11 +79,28 @@ FESTIVAL FILMS
 
 
 GET INVOLVED
-- "Notify me" button does nothing. No mailing list connected.
-- "Register interest" link goes nowhere.
 - Registration dates still show [DATE].
 - Asian Market details still show [Venue] · [Date] · [Hours].
-- The notify box has no heading saying what people are signing up for.
+
+
+STILL TO CREATE OR DESIGN
+- Mobile menu: no design yet. A simple version is built but hasn't been tested.
+- Empty states: /gallery/photos shows a blank grid when filters match nothing. The /events wording
+  was written without a design and needs checking.
+- Phone layout for the real 2027 map. The zones get small at 390px.
+- Share image for link previews on Facebook and in messages. Uses the lion dance photo for now.
+
+
+STILL TO DO IN DEVELOPMENT
+- Run a production build. It hasn't been run yet.
+- Test the mobile menu.
+- Final check of Home, which has changed since it was last reviewed.
+- Finish the mobile check on pages only viewed part of the way down.
+- Make the first Git commit. Nothing is saved in version control yet.
+- Update DESIGN.md and CLAUDE.md to say the card grid was chosen for /events.
+- Decide whether to keep the five unused event layouts.
+- Set the live site address for link previews once the domain is known.
+- Add redirects from the old site's URLs if paths change. The old URLs are needed.
 
 
 BEFORE LAUNCH

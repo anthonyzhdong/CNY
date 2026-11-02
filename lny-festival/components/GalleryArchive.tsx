@@ -95,7 +95,7 @@ export function GalleryArchive() {
         </PillLink>
       </section>
 
-      <Band tone="mint" last>
+      <Band tone="mint">
         <section
           aria-label="Films"
           className="mx-gutter mb-[clamp(88px,11vw,168px)] flex flex-col gap-8 border-t border-ink pt-10"

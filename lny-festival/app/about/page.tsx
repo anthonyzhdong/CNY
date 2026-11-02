@@ -142,7 +142,7 @@ export default function About() {
         ))}
       </section>
 
-      <Band tone="mint" last>
+      <Band tone="mint">
         <section
           aria-labelledby="people-h"
           className="relative mx-gutter flex flex-col gap-10 border-t border-line pb-[clamp(88px,11vw,168px)] pt-[clamp(48px,6vw,88px)]"
