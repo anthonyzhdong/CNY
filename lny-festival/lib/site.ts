@@ -21,7 +21,7 @@ export const footerNav: NavItem[] = [
   { href: "/media", label: "Media" },
   { href: "/sponsors", label: "Sponsors" },
   { href: "/about", label: "About" },
-  { href: "#", label: "Contact us" }, // [Contact URL TBC]
+  { href: "/about#people", label: "Contact us" },
 ];
 
 export const social = {

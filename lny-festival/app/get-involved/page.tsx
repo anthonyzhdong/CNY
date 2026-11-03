@@ -22,10 +22,13 @@ type Row = {
   action: ReactNode;
 };
 
-const opens = (
-  <span className="inline-flex min-h-[46px] flex-none items-center rounded-full border border-ink px-[18px] text-sm">
-    Opens [DATE]
-  </span>
+const openForm = (href: string) => (
+  <a
+    href={href}
+    className="inline-flex min-h-[46px] flex-none items-center rounded-full border border-ink px-[18px] text-sm"
+  >
+    Open Form
+  </a>
 );
 
 const rows: Row[] = [
@@ -42,7 +45,7 @@ const rows: Row[] = [
       </>
     ),
     meta: "[Venue] · [Date] · [Hours]",
-    action: opens,
+    action: openForm("https://forms.gle/AGvNCrkiyX2emPyg7"),
   },
   {
     label: "02 · Performers",
@@ -56,7 +59,7 @@ const rows: Row[] = [
       </>
     ),
     text: "The festival is a stage for local community groups. Dance, music, martial arts and more — show Wellington what your group can do.",
-    action: opens,
+    action: openForm("https://forms.gle/L75R4HTzDQ3JmMZ29"),
   },
 ];
 
@@ -77,7 +80,7 @@ export default function GetInvolved() {
         >
           <span className="inline-flex items-center gap-2.5 self-start rounded-full bg-white px-[18px] py-2.5 text-[15px]">
             <span aria-hidden="true" className="size-2.5 rounded-full bg-[#82C6AD]" />
-            2027 registrations open [DATE]
+            2027 registrations open
           </span>
         </PageHero>
       </Band>

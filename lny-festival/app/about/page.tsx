@@ -144,11 +144,11 @@ export default function About() {
 
       <Band tone="mint">
         <section
-          aria-labelledby="people-h"
+          aria-labelledby="people"
           className="relative mx-gutter flex flex-col gap-10 border-t border-line pb-[clamp(88px,11vw,168px)] pt-[clamp(48px,6vw,88px)]"
         >
           <div className="flex max-w-[720px] flex-col gap-4">
-            <h2 id="people-h" className="font-serif text-[clamp(40px,4.4vw,64px)] leading-none">
+            <h2 id="people" className="font-serif text-[clamp(40px,4.4vw,64px)] leading-none">
               Our <em className="text-red">people</em>
             </h2>
             <p className="text-[clamp(18px,1.5vw,21px)] leading-[1.5] text-ink-muted">

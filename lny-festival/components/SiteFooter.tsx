@@ -53,8 +53,6 @@ export function SiteFooter() {
       <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-2 border-t border-line pt-3.5 text-[13px] text-ink-muted">
         <span>Te Whanganui-a-Tara Wellington · 2027</span>
         <div className="flex flex-wrap items-center gap-x-[18px] gap-y-1">
-          <a href="#">Accessibility</a>
-          <a href="#">Privacy</a>
           <a
             href={social.instagram}
             aria-label="Instagram"

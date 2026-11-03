@@ -20,8 +20,8 @@ const moments = [
 
 const facts = [
   ["When", "20–21 February 2027"],
-  ["Where", "[Venue], Wellington"],
-  ["Hours", "[Opening times]"],
+  ["Where", "TSB Arena, Wellington"],
+  ["Hours", "TBC"],
   ["Entry", "Free for everyone"],
 ];
 

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+// import Link from "next/link";
 import { Band } from "@/components/Band";
 import { PageHero } from "@/components/PageHero";
 import { PillLink } from "@/components/Pill";
@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   description: "Find your flock: explore the festival zones and download printable maps and programmes.",
 };
 
-const printables = [
-  { title: "Cultural Entertainment programme", colour: "bg-pink-soft", label: "text-red" },
-  { title: "Fun in the Park map & programme", colour: "bg-lime-soft", label: "text-[#649276]" },
-  { title: "Craft stalls map", colour: "bg-[#F3E7EF]", label: "text-red" },
-  { title: "Food hall map", colour: "bg-[#FBEBCF]", label: "text-[#8A5A10]" },
-];
+// const printables = [
+//   { title: "Cultural Entertainment programme", colour: "bg-pink-soft", label: "text-red" },
+//   { title: "Fun in the Park map & programme", colour: "bg-lime-soft", label: "text-[#649276]" },
+//   { title: "Craft stalls map", colour: "bg-[#F3E7EF]", label: "text-red" },
+//   { title: "Food hall map", colour: "bg-[#FBEBCF]", label: "text-[#8A5A10]" },
+// ];
 
 export default function FestivalMap() {
   return (
@@ -42,6 +42,7 @@ export default function FestivalMap() {
 
       <ZoneMap />
 
+      {/* Printable maps & programmes: hidden until the PDFs exist.
       <Band tone="butter">
         <section className="mx-gutter mb-[clamp(88px,11vw,168px)] flex flex-col gap-8 border-t border-ink pt-10">
           <h2 className="font-serif text-[clamp(32px,3.4vw,48px)]">
@@ -57,6 +58,7 @@ export default function FestivalMap() {
           </div>
         </section>
       </Band>
+      */}
     </>
   );
 }

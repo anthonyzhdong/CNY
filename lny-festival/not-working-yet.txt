@@ -3,7 +3,7 @@ Add to this as each page gets checked. Delete items once they're fixed.
 
 
 EVERY PAGE (header and footer)
-- Footer "Contact us", "Accessibility" and "Privacy" links go nowhere. No pages or URLs yet.
+- Footer "Accessibility" and "Privacy" links are removed for now. Add them back once the pages exist.
 
 
 HOME
@@ -51,7 +51,7 @@ EVENT PAGES
 
 FESTIVAL MAP
 - Add map PDF: "Download printable map (PDF)" goes nowhere.
-- Add map PDF to programmes and printables: the four printable PDF cards go nowhere.
+- "Printable maps & programmes" section is commented out in app/map/page.tsx until the four PDFs exist.
 - Descriptions for map locations: Craft Stalls, Food Hall and Fun in the Park still show
   placeholder [Zone description] and [What's here]. Only Cultural Entertainment has real copy.
 - "See the programme" goes to /events for every zone.
