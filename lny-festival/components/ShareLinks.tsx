@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export function ShareLinks({ pillClass }: { pillClass: string }) {
+export function ShareLinks({ pillClass, facebookHref }: { pillClass: string; facebookHref?: string }) {
   const [copied, setCopied] = useState(false);
   const pill = `box-content inline-flex min-h-10 items-center rounded-full px-3.5 text-sm ${pillClass}`;
 
@@ -18,9 +18,15 @@ export function ShareLinks({ pillClass }: { pillClass: string }) {
 
   return (
     <div className="flex flex-wrap gap-2">
-      <button type="button" onClick={shareOnFacebook} className={pill}>
-        Facebook
-      </button>
+      {facebookHref ? (
+        <a href={facebookHref} className={pill}>
+          Facebook
+        </a>
+      ) : (
+        <button type="button" onClick={shareOnFacebook} className={pill}>
+          Facebook
+        </button>
+      )}
       <button type="button" onClick={copyLink} className={pill}>
         {copied ? "Copied" : "Copy link"}
       </button>

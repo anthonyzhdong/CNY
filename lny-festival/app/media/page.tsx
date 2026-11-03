@@ -93,7 +93,7 @@ export default function Media() {
             Media <em className="text-red">enquiries</em>
           </h2>
           <p className="max-w-[560px] text-[17px] leading-[1.5] text-ink-soft">
-            For interviews, images and festival information, contact [MEDIA CONTACT NAME] at [EMAIL] or [PHONE].
+            For interviews, images and festival information, contact linda@asianeventstrust.co.nz
           </p>
         </div>
         <div className="flex flex-wrap gap-2.5">

@@ -7,6 +7,7 @@ import { Figure } from "@/components/Editorial";
 import { BackLink, Tag } from "@/components/Pill";
 import { ShareLinks } from "@/components/ShareLinks";
 import { featuredNews, news } from "@/lib/news";
+import { social } from "@/lib/site";
 
 export function generateStaticParams() {
   return [{ slug: featuredNews.slug }];
@@ -69,7 +70,7 @@ export default async function MediaArticle({ params }: PageProps<"/media/[slug]"
                 ))}
               </div>
               <span className="label mt-3 text-red">Share</span>
-              <ShareLinks pillClass="border border-ink" />
+              <ShareLinks pillClass="border border-ink" facebookHref={social.facebook} />
             </aside>
 
             <div className="flex min-w-0 max-w-[700px] flex-[999_1_520px] flex-col gap-[22px] text-[19px] leading-[1.65] text-ink-soft">
@@ -124,10 +125,10 @@ export default async function MediaArticle({ params }: PageProps<"/media/[slug]"
                 and the wider public embrace it — is truly special.”
               </p>
               <p>Once again, the festival showed that when communities unite, the result is vibrant, welcoming and memorable.</p>
-              <div className="mt-4 flex flex-col gap-2 rounded-sm bg-white px-6 py-[22px] text-base leading-[1.5]">
+              {/* <div className="mt-4 flex flex-col gap-2 rounded-sm bg-white px-6 py-[22px] text-base leading-[1.5]">
                 <strong className="font-medium">Media enquiries</strong>
                 <span>[MEDIA CONTACT NAME] · [PHONE] · [EMAIL]</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </article>
