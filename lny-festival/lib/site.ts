@@ -8,16 +8,19 @@ export const mainNav: (NavItem & { accent: string })[] = [
   { href: "/are-you-a-sheep", label: "Are you a sheep?", accent: "bg-lime" },
   { href: "/get-involved", label: "Registrations", accent: "bg-pink" },
   { href: "/sponsors", label: "Sponsors", accent: "bg-lilac" },
+  { href: "/about", label: "About", accent: "bg-lime" },
   { href: "/about#people", label: "Contact us", accent: "bg-mint" },
 ];
 
 export const footerNav: NavItem[] = [
+  { href: "/", label: "Home" },
   { href: "/events", label: "Events" },
   { href: "/map", label: "Festival map" },
   { href: "/get-involved", label: "Get involved" },
   { href: "/are-you-a-sheep", label: "Are you a sheep?" },
   { href: "/traditions", label: "Traditions" },
   { href: "/gallery", label: "Gallery archive" },
+  { href: "/gallery/photos", label: "Photo gallery" },
   { href: "/gallery/films", label: "Festival films" },
   { href: "/media", label: "Media" },
   { href: "/sponsors", label: "Sponsors" },
