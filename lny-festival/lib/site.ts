@@ -3,11 +3,12 @@ export type NavItem = { href: string; label: string };
 // Current-page pill colour for each main nav item (DESIGN.md §4).
 export const mainNav: (NavItem & { accent: string })[] = [
   { href: "/events", label: "Events", accent: "bg-pink" },
-  { href: "/map", label: "Festival map", accent: "bg-mint" },
-  { href: "/get-involved", label: "Get involved", accent: "bg-pink" },
-  { href: "/about", label: "About", accent: "bg-mint" },
-  { href: "/media", label: "Media", accent: "bg-lilac" },
-  { href: "/traditions", label: "Traditions", accent: "bg-lime" },
+  { href: "/map", label: "Festival Guide", accent: "bg-mint" },
+  { href: "/media", label: "News & Articles", accent: "bg-lilac" },
+  { href: "/are-you-a-sheep", label: "Are you a sheep?", accent: "bg-lime" },
+  { href: "/get-involved", label: "Registrations", accent: "bg-pink" },
+  { href: "/sponsors", label: "Sponsors", accent: "bg-lilac" },
+  { href: "/about#people", label: "Contact us", accent: "bg-mint" },
 ];
 
 export const footerNav: NavItem[] = [

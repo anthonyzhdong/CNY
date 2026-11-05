@@ -9,6 +9,8 @@ EVERY PAGE (header and footer)
 HOME
 - Where and Hours still show [Venue] and [Opening times].
 - Featured event dates still show bracketed placeholders, e.g. [Sat 20 · Time TBC].
+- "Register for 2027 festival" button goes nowhere (# for now). Needs the registration link.
+- News & articles: the three news rows go nowhere (# for now), same as on Media.
 
 
 MEDIA

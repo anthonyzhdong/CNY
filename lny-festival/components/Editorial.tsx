@@ -7,16 +7,19 @@ type SectionHeadingProps = {
   number: string;
   colour: string;
   title: ReactNode;
+  /** Short line under the title. */
+  subtitle?: ReactNode;
   icon?: IllustrationName;
   /** Icon width class. */
   iconClass?: string;
 };
 
-export function SectionHeading({ number, colour, title, icon, iconClass = "" }: SectionHeadingProps) {
+export function SectionHeading({ number, colour, title, subtitle, icon, iconClass = "" }: SectionHeadingProps) {
   return (
     <div className="flex max-w-80 flex-[1_1_220px] flex-col gap-2.5">
       <Tag className={colour}>{number}</Tag>
       <h2 className="font-serif text-[40px] leading-[1.05]">{title}</h2>
+      {subtitle && <p className="whitespace-nowrap text-[14px] leading-[1.5] text-ink-subtle">{subtitle}</p>}
       {icon && <Illustration name={icon} className={`mt-7 mobile:hidden ${iconClass}`} sizes="300px" bob />}
     </div>
   );

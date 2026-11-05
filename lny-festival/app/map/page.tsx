@@ -31,12 +31,12 @@ export default function FestivalMap() {
               Find your <em className="text-red">flock</em>
             </>
           }
-          intro="Tap a zone on the map to see what’s happening there. Layout shown is based on 2026 — the 2027 map is coming soon."
-          aside={
-            <PillLink href="#" variant="solid" size="lg">
-              Download printable map (PDF)
-            </PillLink>
-          }
+          intro="Tap a zone on the map to see what’s happening there — the 2027 map is coming soon."
+          // aside={
+            // <PillLink href="#" variant="solid" size="lg">
+            //   Download printable map (PDF)
+            // </PillLink>
+          // }
         />
       </Band>
 

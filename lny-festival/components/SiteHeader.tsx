@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef } from "react";
-import { CloseIcon, FacebookIcon, InstagramIcon, MenuIcon } from "@/components/Icons";
-import { mainNav, social } from "@/lib/site";
+import { CloseIcon, MenuIcon } from "@/components/Icons";
+import { mainNav } from "@/lib/site";
 
 function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
   const pathname = usePathname();
@@ -29,27 +29,6 @@ function NavLinks({ onNavigate }: { onNavigate?: () => void }) {
   );
 }
 
-function SocialLinks() {
-  return (
-    <div className="-ml-2 flex gap-1">
-      <a
-        href={social.facebook}
-        aria-label="Facebook"
-        className="flex size-10 items-center justify-center"
-      >
-        <FacebookIcon />
-      </a>
-      <a
-        href={social.instagram}
-        aria-label="Instagram"
-        className="flex size-10 items-center justify-center"
-      >
-        <InstagramIcon />
-      </a>
-    </div>
-  );
-}
-
 export function SiteHeader() {
   const menu = useRef<HTMLDialogElement>(null);
 
@@ -69,9 +48,6 @@ export function SiteHeader() {
       <nav aria-label="Main" className="ml-auto flex items-center gap-x-[clamp(10px,1.6vw,22px)] whitespace-nowrap text-[15px] mobile:hidden">
         <NavLinks />
       </nav>
-      <div className="mobile:hidden">
-        <SocialLinks />
-      </div>
 
       <button
         type="button"
@@ -100,9 +76,6 @@ export function SiteHeader() {
           <nav aria-label="Mobile" className="flex flex-col items-start gap-5 font-serif text-[34px] leading-none">
             <NavLinks onNavigate={() => menu.current?.close()} />
           </nav>
-          <div className="ml-2 mt-auto">
-            <SocialLinks />
-          </div>
         </div>
       </dialog>
     </header>

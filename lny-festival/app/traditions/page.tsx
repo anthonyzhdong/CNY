@@ -98,13 +98,16 @@ export default function Traditions() {
 
       <EditorialSection number="01" colour="bg-mint" title="The festival" icon="chinese-knot" iconClass="w-[225px]">
         <p>
-          Lunar New Year marks the beginning of the lunar calendar, which follows the cycle of the moon. It usually
-          falls between mid-January and late February. Celebrated with great enthusiasm in China and embraced by
-          communities around the world, it is one of the most widely observed festivals anywhere.
+          Lunar New Year is one of the most significant celebrations in the cultural calendar for communities across
+          Asia and around the world. Also known as Chinese New Year or Spring Festival, Tết in Vietnam and Seollal in
+          Korea, it marks the beginning of a new year and is a time for families and communities to come together,
+          honour traditions, celebrate new beginnings and welcome good fortune.
         </p>
         <p>
-          It is a time for family reunions, joyful celebrations and welcoming good fortune. Families come together to
-          honour their ancestors, share generous meals and exchange good wishes for the year ahead.
+          While traditions and customs vary between cultures, the celebrations share common themes of family, renewal,
+          prosperity and togetherness. From China, Vietnam and Korea to Mongolia and communities across South-East Asia
+          and the wider world, Lunar New Year is celebrated in many different ways, making it one of the world’s most
+          widely observed cultural occasions.
         </p>
       </EditorialSection>
 
@@ -120,9 +123,9 @@ export default function Traditions() {
           Some myths and superstitions carry special meaning at Lunar New Year. Each one helps make sure the year begins
           smoothly.
         </p>
-        <Subhead>Hongbao — red envelopes</Subhead>
+        <Subhead>Red envelopes</Subhead>
         <p>
-          Red envelopes, or <em>hongbao</em> in Mandarin, are one of the most loved traditions. Decorated with gold
+          Red envelopes are one of the most loved traditions. Decorated with gold
           designs and characters of good wishes, they are given to share blessings and goodwill. Red stands for luck,
           prosperity and happiness.
         </p>
@@ -131,7 +134,7 @@ export default function Traditions() {
           loud noises. Money in red envelopes, and firecrackers, became a way to keep children safe.
         </Callout>
         <p>
-          Today friends and colleagues exchange hongbao too. The amount matters less than the gesture: a wish for
+          Today friends and colleagues exchange red envelopes too. The amount matters less than the gesture: a wish for
           prosperity and good fortune.
         </p>
         <Subhead>Cleaning the house</Subhead>

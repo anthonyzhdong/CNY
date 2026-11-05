@@ -102,6 +102,7 @@ export default function AreYouASheep() {
         number="02"
         colour="bg-pink"
         title="Year of the Sheep"
+        subtitle="(and sometimes called the Goat or Ram)"
         icon="sheep-lying"
         iconClass="!mt-6 w-[170px]"
         padding="pb-[clamp(104px,12vw,192px)] pt-[clamp(88px,11vw,168px)]"
@@ -112,7 +113,9 @@ export default function AreYouASheep() {
           and Water — rotate through the zodiac, and this year the Sheep is paired with Fire, adding warmth and spark to
           a famously gentle sign.
         </p>
-        <p>[2027 festival tie-in copy — how the Sheep’s qualities come to life across the programme.]</p>
+        <p>The Year of the Fire Sheep is associated with creativity, compassion, harmony and community. Blending the Sheep's gentle, 
+          artistic and nurturing qualities with the warmth and energy of the Fire element, 2027 is seen as a year that favours collaboration, meaningful relationships, 
+          creative expression and new ideas. It encourages us to embrace empathy, nurture connections and find strength in working together.</p>
         <div className="mt-3 grid grid-cols-[repeat(auto-fit,minmax(min(100%,240px),1fr))] gap-4 text-ink">
           <div className="flex flex-col gap-2 rounded-sm bg-lime-soft p-[22px]">
             <span className="label leading-[1.6] text-moss">Years of the Sheep</span>

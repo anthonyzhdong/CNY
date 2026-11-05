@@ -11,28 +11,21 @@ export const metadata: Metadata = {
 };
 
 const pillars = [
-  {
-    label: "Connection",
-    colour: "bg-lime",
-    text: "Asian and non-Asian audiences connect through an interest and desire to take part, increasing exposure, awareness, understanding and acceptance of Lunar New Year traditions and celebrations.",
-  },
-  {
-    label: "Ownership",
-    colour: "bg-lilac",
-    text: "The festival has created a strong sense of ownership within the community, with Asian and non-Asian groups and organisations working together to showcase the cultural diversity of Wellington.",
-  },
+  { label: "Connection", colour: "bg-lime", text: "Bringing cultures and people together." },
+  { label: "Community", colour: "bg-lilac", text: "Celebrating diversity, belonging and participation." },
+  { label: "Creativity", colour: "bg-pink", text: "Showcasing traditional and contemporary artistic expression." },
 ];
 
 const objectives = [
-  { colour: "bg-lime", text: "Increase understanding of Lunar New Year tradition and provide opportunities for the wider community to engage with Asian arts and culture." },
+  { colour: "bg-lime", text: "Increase understanding of Lunar New Year traditions and provide opportunities for the wider community to engage with Asian arts and culture." },
   { colour: "bg-pink", text: "Enliven our streets, places and spaces with enriching arts and cultural experiences that increase understanding of Asian culture." },
   { colour: "bg-mint", text: "Create pride within the Asian community for their culture and engage youth, creating a pathway for Asian New Zealanders to be actively involved in preserving their cultural heritage." },
 ];
 
 const timeline = [
-  ["Before 2022", "Wellington’s much-loved Chinese New Year Festival"],
-  ["2022", "Renamed the Lunar New Year Festival"],
-  ["2024", "Arts & Culture Award, Wellington Airport Regional Community Awards"],
+  ["2001", "Inaugural Chinese New Year Festival held under the umbrella of the Wellington Chinese Sports and Cultural Centre"],
+  ["2002", "Asian Events Trust founded as not-for-profit trust to organise new year celebrations"],
+  ["2022", "Wellington’s much-loved Chinese New Year Festival rebranded to the Lunar New Year Festival"],
 ];
 
 const people = [
@@ -40,7 +33,7 @@ const people = [
     name: "Linda Lim",
     role: "Founding Trustee · Chairperson",
     colour: "bg-pink-soft",
-    bio: "An experienced communications, relationships and events manager who has run many successful events outside of the festival, with Dance Aotearoa New Zealand and Victim Support. Linda is a founding Trustee, Chairperson of AET and Programme Director for the festival, and is currently Communications and Engagement Lead for the New Zealand Productivity Commission Te Komihana Whai Hua o Aotearoa.",
+    bio: "Linda brings extensive experience in strategic relationships, stakeholder engagement, communications and event management, with a strong track record of delivering successful events and building meaningful partnerships across diverse communities. A founding Trustee and Chair of Asian Events Trust, she also leads the festival’s programme development, bringing together people, organisations and communities to deliver a vibrant and inclusive celebration.",
     remit: "Sponsorship, community liaison, media and publicity",
     email: "linda@asianeventstrust.co.nz",
   },
@@ -48,7 +41,7 @@ const people = [
     name: "Rita Tom",
     role: "Trustee · Finance Director",
     colour: "bg-mint-soft",
-    bio: "A qualified Chartered Accountant with wide experience in audit, management and financial reporting. Rita is a Trustee and Accountant for the Trust, and Finance Director for the festival.",
+    bio: "A qualified Chartered Accountant with extensive experience in audit, management and financial reporting. Rita is a Trustee and Accountant for the Trust, and Finance Director for the festival. She also leads the management and delivery of the Asian Market, bringing strong financial and organisational expertise to the festival.",
     remit: "Funding and finances",
     email: "rita@asianeventstrust.co.nz",
   },
@@ -87,30 +80,24 @@ export default function About() {
       />
 
       <section className="flex flex-col gap-14 px-gutter py-section">
-        <p className="max-w-[960px] font-serif text-[clamp(28px,3vw,42px)] leading-[1.2] text-ink-soft">
-          A mainstay of Wellington’s events calendar, the festival gives local community groups a stage and invites
-          everyone to experience a <em className="text-red">vibrant, diverse</em> culture.
-        </p>
-        <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] items-start gap-x-12 gap-y-8">
+        <div className="flex max-w-[960px] flex-col gap-5">
+          <h2 className="font-serif text-[clamp(28px,3vw,42px)] leading-[1.2] text-ink-soft">
+            A Pan-Asian festival of <em className="text-red">connection, community</em> and{" "}
+            <em className="text-red">creativity</em>
+          </h2>
+          <p className="max-w-[760px] text-[clamp(17px,1.4vw,19px)] leading-[1.55] text-ink-soft">
+            At its heart, the festival is about connection, community and creativity – creating opportunities for
+            people of all ages and backgrounds to come together, share cultures, build understanding and experience the
+            richness of Asia in Wellington’s own backyard.
+          </p>
+        </div>
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-5">
           {pillars.map(({ label, colour, text }) => (
-            <div key={label} className="flex flex-col gap-3 border-t border-ink pt-5">
-              <Tag className={colour}>{label}</Tag>
-              <p className="text-[17px] leading-[1.55] text-ink-soft">{text}</p>
+            <div key={label} className={`flex h-full flex-col gap-4 rounded-sm px-7 pb-8 pt-7 ${colour}`}>
+              <Tag className="bg-white">{label}</Tag>
+              <p className="text-[19px] leading-[1.5] text-ink">{text}</p>
             </div>
           ))}
-          <div className="relative flex flex-col gap-2 rounded-sm bg-pink px-7 pb-8 pt-7 text-[#3A1830]">
-            <span className="font-serif text-[64px] italic leading-none">3,500+</span>
-            <p className="text-base leading-[1.5]">
-              volunteers contribute their time, skills and resources each year. They are part of a community that is
-              integral to delivering an authentic celebration of the Lunar New Year.
-            </p>
-            <Illustration
-              name="chinese-knot"
-              className="absolute right-[-24px] top-[-108px] w-[180px] mobile:hidden"
-              sizes="180px"
-              bob={3}
-            />
-          </div>
         </div>
       </section>
 
@@ -152,7 +139,8 @@ export default function About() {
               Our <em className="text-red">people</em>
             </h2>
             <p className="text-[clamp(18px,1.5vw,21px)] leading-[1.5] text-ink-muted">
-              The festival organisers are the trustees, and produce the event outside of their paid employment.
+              The festival organisers are the trustees and advisors of Asian Events Trust, and produce the event outside of their
+              paid employment.
             </p>
           </div>
           <div className="grid grid-cols-[repeat(auto-fit,minmax(min(100%,380px),1fr))] gap-6">
@@ -173,10 +161,27 @@ export default function About() {
               </article>
             ))}
           </div>
-          <p className="max-w-[720px] text-base leading-[1.55] text-ink-muted">
-            Linda and Rita are supported by Trustee Advisors, who oversee the direction of the festival and help from
-            within their areas of expertise.
-          </p>
+          <article className="flex flex-col gap-4 rounded-sm bg-white p-[clamp(24px,3vw,40px)]">
+            <Tag className="bg-lilac">Trustee Advisors</Tag>
+            <p className="max-w-[880px] text-[clamp(18px,1.5vw,21px)] leading-[1.5] text-ink-muted">
+              Linda and Rita are supported by Trustee Advisors, to help oversee the direction of the festival and help
+              from within their areas of expertise.
+            </p>
+            <div className="flex max-w-[880px] flex-col gap-4 text-[17px] leading-[1.6] text-ink-soft">
+              <p>
+                <em className="font-serif text-[1.4em] leading-none text-red">Jacqui Dong</em> and{" "}
+                <em className="font-serif text-[1.4em] leading-none text-red">Nicky Lim</em> bring valuable skills and
+                fresh perspectives to the festival through their respective areas of expertise. Jacqui, a software
+                engineer based in London, oversees festival design, branding and visual assets, including the website,
+                while Nicky, an optometrist, supports performer coordination and management, providing essential
+                backstage and behind-the-scenes support to ensure the smooth delivery of quality stage programmes.
+              </p>
+              <p>
+                Both have grown up with the festival, progressing from performers to valued contributors, bringing the
+                insights and perspectives of a younger generation to help keep the festival evolving, relevant and fresh.
+              </p>
+            </div>
+          </article>
         </section>
       </Band>
     </>
