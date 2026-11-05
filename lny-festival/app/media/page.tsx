@@ -93,17 +93,12 @@ export default function Media() {
             Media <em className="text-red">enquiries</em>
           </h2>
           <p className="max-w-[560px] text-[17px] leading-[1.5] text-ink-soft">
-            For interviews, images and festival information, contact linda@asianeventstrust.co.nz
+            For interviews, images and festival information, get in touch.
           </p>
         </div>
-        <div className="flex flex-wrap gap-2.5">
-          <PillLink href="#" variant="solid" size="lg">
-            Email the media team
-          </PillLink>
-          <PillLink href="#" size="lg">
-            Download press kit
-          </PillLink>
-        </div>
+        <PillLink href="mailto:linda@asianeventstrust.co.nz" variant="solid" size="lg">
+          Email linda@asianeventstrust.co.nz
+        </PillLink>
         <Illustration
           name="red-packet"
           className="absolute right-[28%] top-[-84px] w-36 mobile:hidden"
