@@ -6,13 +6,7 @@ import { Photo } from "@/components/Photo";
 import { PillLink, Tag } from "@/components/Pill";
 import { featuredNews, news } from "@/lib/news";
 
-const greetings = [
-  ["Chúc Mừng Năm Mới", "vi"],
-  ["Saehae bog manh-i bad euseyo", "ko-Latn"],
-  ["Sawasdee Pee Mai", "th-Latn"],
-  ["Selamat tahun baru", "ms"],
-  ["Maligayang Bagong Taon", "fil"],
-];
+
 
 const featured = [
   { href: "/events/lion-dance", when: "[Sat 20 February· 6-9:30pm]", name: "Light up the night", src: "/images/photos/lion-dance.jpg", alt: "performances, pop-up activities, lanterns and fireworks" },
@@ -89,16 +83,10 @@ export default function Home() {
 
         <section className="flex flex-wrap items-end justify-between gap-x-12 gap-y-6 px-gutter pb-[clamp(56px,7vw,96px)] pt-[clamp(40px,5vw,72px)]">
           <div className="flex min-w-0 max-w-[820px] flex-[999_1_560px] flex-col gap-4">
-            <div className="flex flex-col gap-1.5">
+            {/* <div className="flex flex-col gap-1.5">
               <p className="text-[17px]" lang="zh-Latn">Xīn nián kuài lè, Gōng xǐ fā cái</p>
-              <ul className="flex flex-col gap-0.5 text-sm text-ink-muted">
-                {greetings.map(([text, lang]) => (
-                  <li key={text} lang={lang}>
-                    {text}
-                  </li>
-                ))}
-              </ul>
-            </div>
+             
+            </div> */}
             <p className="font-serif text-[clamp(30px,3.4vw,48px)] leading-[1.12]">
               Welcome the <em className="text-red">Year of the Sheep</em> with food, music, performances and cultural traditions from across Asia in
               Te Whanganui-a-Tara Wellington.
@@ -112,7 +100,7 @@ export default function Home() {
             <PillLink href="/map" size="lg">
               Plan your visit
             </PillLink>
-            <PillLink href="#" size="lg">
+            <PillLink href="/registrations" size="lg">
               Register for 2027 festival
             </PillLink>
           </div>

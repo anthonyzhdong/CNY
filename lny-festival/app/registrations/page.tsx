@@ -6,7 +6,7 @@ import { Photo } from "@/components/Photo";
 import { Tag } from "@/components/Pill";
 
 export const metadata: Metadata = {
-  title: "Get involved",
+  title: "Registrations",
   description: "Register as a stallholder, performer or volunteer for the 2027 Lunar New Year Festival in Wellington.",
 };
 
@@ -104,7 +104,7 @@ const rows: Row[] = [
   },
 ];
 
-export default function GetInvolved() {
+export default function Registrations() {
   return (
     <>
       <Band tone="hero">

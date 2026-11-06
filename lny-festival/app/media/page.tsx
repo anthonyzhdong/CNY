@@ -26,7 +26,7 @@ export default function Media() {
           padding="pt-[clamp(56px,8vw,128px)] pb-[clamp(40px,5vw,72px)]"
           title={
             <>
-              News &amp; <em className="text-red">media</em>
+              News &amp; <em className="text-red">Articles</em>
             </>
           }
           aside={
@@ -42,7 +42,7 @@ export default function Media() {
 
       <Link
         href={`/media/${featuredNews.slug}`}
-        className="mx-gutter flex flex-wrap items-center gap-x-12 gap-y-6 rounded-sm bg-pink-soft p-[clamp(20px,2.4vw,32px)] hover:text-ink"
+        className="mx-gutter mb-[clamp(40px,5vw,72px)] flex flex-wrap items-center gap-x-12 gap-y-6 rounded-sm bg-pink-soft p-[clamp(20px,2.4vw,32px)] hover:text-ink"
       >
         <Photo
           src={featuredNews.img}

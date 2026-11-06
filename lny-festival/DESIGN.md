@@ -140,7 +140,7 @@ Illustrations (`public/images/illustrations`) and 3D icons (`public/images/icons
 |---|---|---|
 | `/` | `home.html` | Hero of **5 bobbing sheep** over the pink glow (don't change this). On mobile it re-flows to 3 sheep at a 4:3 ratio. The masthead image overlaps the bottom of the sheep area (`margin-top: -8vw`, reset on mobile). Then the greeting and welcome copy with two CTAs, the award strip, 3 featured events, the "Are you a sheep?" and "Find your flock" (map) panels, Festival moments (photo grid), and the About info row. |
 | `/traditions` | `traditions.html` | Long-form editorial in 7 numbered sections, with quote bands, a food card grid and a greetings block. |
-| `/get-involved` | `get-involved.html` | 3 rows (Stallholders, Performers, Volunteers) with "Opens [DATE]" or "Register interest", and an email notify box. |
+| `/registrations` | `get-involved.html` | 3 rows (Stallholders, Performers, Volunteers) with "Opens [DATE]" or "Register interest", and an email notify box. |
 | `/about` | `about.html` | AET mission, three pillars (Connection, Ownership, a 3,500+ volunteers stat card), 3 objectives, a timeline, and *Our people* (Linda Lim, Rita Tom) with mailto buttons. |
 | `/media` | `media.html` | Featured article card, news list, and a "Media enquiries" mint banner with "Email the media team" and "Download press kit". |
 | `/media/[slug]` | `media-article.html` | Article with a stat sidebar, pull-quote, share links and "More news". |
