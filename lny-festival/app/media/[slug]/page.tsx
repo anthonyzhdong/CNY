@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { Band } from "@/components/Band";
 import { Illustration } from "@/components/Decoration";
 import { Figure } from "@/components/Editorial";
@@ -24,7 +25,16 @@ const stats = [
   { value: "10 min", label: "fireworks over the harbour", colour: "bg-mint" },
 ];
 
-export default async function MediaArticle({ params }: PageProps<"/media/[slug]">) {
+// Reading `params` ties the page to one URL, so it renders behind Suspense to keep the shared shell instant.
+export default function MediaArticlePage({ params }: PageProps<"/media/[slug]">) {
+  return (
+    <Suspense fallback={<Band tone="hero" fade="fixed"><div className="min-h-[60vh]" /></Band>}>
+      <MediaArticle params={params} />
+    </Suspense>
+  );
+}
+
+async function MediaArticle({ params }: Pick<PageProps<"/media/[slug]">, "params">) {
   const { slug } = await params;
   if (slug !== featuredNews.slug) notFound();
 

@@ -48,6 +48,7 @@ function Grid({ events }: EventListProps) {
           </div>
           <span className="label text-red">{event.when}</span>
           <h2 className="font-serif text-[30px] leading-[1.05]">{event.name}</h2>
+          {event.summary && <span className="text-[17px] leading-[1.4] text-ink-soft">{event.summary}</span>}
           <span className="text-[15px] text-ink-muted">{event.place}</span>
         </Link>
       ))}
@@ -133,7 +134,7 @@ function FeaturedPlusList({ events }: EventListProps) {
           <span className="label text-ink-subtle">Don’t miss</span>
           <span className="font-serif text-[clamp(48px,5.6vw,84px)] leading-[0.95]">{featured.name}</span>
           <span className="font-mono text-sm text-red">
-            {dayNames[featured.day].short} Feb · [{featured.time}] · {featured.place}
+            {featured.date} · [{featured.time}] · {featured.place}
           </span>
           <span className="inline-flex min-h-12 items-center self-start rounded-full bg-pink px-6 text-[15px] font-medium text-ink">
             Event details →
@@ -147,7 +148,7 @@ function FeaturedPlusList({ events }: EventListProps) {
               <Photo src={event.img} alt="" ratio="4/3" sizes="(max-width: 720px) 46vw, 300px" className="w-[46%] flex-none" />
               <span className="flex min-w-0 flex-auto flex-col gap-2">
                 <span className="font-mono text-[13px] text-red">
-                  {dayNames[event.day].short} · [{event.time}]
+                  {event.date} · [{event.time}]
                 </span>
                 <span className="font-serif text-[30px] leading-[1.05]">{event.name}</span>
                 <span className="flex flex-wrap items-center gap-x-3 gap-y-2">
@@ -185,7 +186,7 @@ function BigTypeIndex({ events }: EventListProps) {
               {event.name}
             </span>
             <span className="font-mono text-[13px] text-red">
-              {dayNames[event.day].short} · [{event.time}] · {event.place}
+              {event.date} · [{event.time}] · {event.place}
             </span>
           </span>
           <span className="flex items-center gap-3.5">
@@ -221,7 +222,7 @@ function AlternatingEditorial({ events }: EventListProps) {
             </span>
             <span className="font-serif text-[clamp(40px,4.4vw,64px)] leading-[0.95]">{event.name}</span>
             <span className="font-mono text-sm text-red">
-              {dayNames[event.day].short} Feb · [{event.time}]
+              {event.date} · [{event.time}]
             </span>
             <span className="text-base text-ink-muted">{event.place}</span>
             <span className="self-start border-b border-current text-[15px]">Event details →</span>

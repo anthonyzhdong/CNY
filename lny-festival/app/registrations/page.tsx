@@ -24,13 +24,10 @@ type Row = {
   action?: ReactNode;
 };
 
-const openForm = (href: string) => (
-  <a
-    href={href}
-    className="inline-flex min-h-[46px] flex-none items-center rounded-full border border-ink px-[18px] text-sm"
-  >
-    Open Form
-  </a>
+const closed = (
+  <span className="inline-flex min-h-[46px] flex-none items-center rounded-full border border-line px-[18px] text-sm text-ink-muted">
+    Registrations closed
+  </span>
 );
 
 const rows: Row[] = [
@@ -60,7 +57,7 @@ const rows: Row[] = [
         details: "Frank Kitts Park · 21 February · 11am to 5pm",
       },
     ],
-    action: openForm("https://forms.gle/AGvNCrkiyX2emPyg7"),
+    action: closed,
   },
   {
     label: "02 · Performers",
@@ -79,7 +76,7 @@ const rows: Row[] = [
       { name: "A taste of Asia", details: "TSB Arena · 21 February · 11am to 5pm" },
       { name: "A flock of fun by the waterfront", details: "Frank Kitts Park · 21 February · 11am to 5pm" },
     ],
-    action: openForm("https://forms.gle/L75R4HTzDQ3JmMZ29"),
+    action: closed,
   },
   {
     label: "03 · Community events",
@@ -100,7 +97,7 @@ const rows: Row[] = [
         </p>
       </>
     ),
-    action: openForm("https://forms.gle/yhxjQJbk5BjB77bN9"),
+    action: closed,
   },
 ];
 
@@ -124,8 +121,8 @@ export default function Registrations() {
             mid-December.
           </p>
           <span className="inline-flex items-center gap-2.5 self-start rounded-full bg-white px-[18px] py-2.5 text-[15px]">
-            <span aria-hidden="true" className="size-2.5 rounded-full bg-[#82C6AD]" />
-            2027 registrations open
+            <span aria-hidden="true" className="size-2.5 rounded-full bg-red" />
+            2027 registrations closed
           </span>
         </PageHero>
       </Band>

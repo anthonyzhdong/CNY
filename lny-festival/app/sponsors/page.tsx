@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Band } from "@/components/Band";
 import { PageHero } from "@/components/PageHero";
-import { PillLink } from "@/components/Pill";
 
 export const metadata: Metadata = {
   title: "Sponsors",
@@ -95,9 +94,6 @@ export default function Sponsors() {
             Reach tens of thousands of festival-goers and support one of Wellington’s most-loved community celebrations.
           </p>
         </div>
-        <PillLink href="#" variant="solid" size="lg" className="!px-6">
-          Get the sponsorship pack
-        </PillLink>
       </section>
     </>
   );

@@ -6,9 +6,10 @@ import { Illustration } from "@/components/Decoration";
 import { Lightbox } from "@/components/Lightbox";
 import { Photo } from "@/components/Photo";
 import { FilterPill } from "@/components/Pill";
-import { galleryYears, photos } from "@/lib/media";
+import { photos } from "@/lib/media";
 
 const categories = ["All", "Performances", "Food", "Crafts", "Crowd"];
+const years = ["All years", "2026", "Other years"];
 const pageSize = 16;
 
 export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
@@ -18,7 +19,7 @@ export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
   const [open, setOpen] = useState<number | null>(null);
 
   const matches = photos.filter(
-    (photo) => (category === "All" || photo.cat === category) && (year === "All years" || photo.year === year),
+    (photo) => (category === "All" || photo.cat === category) && (year === "All years" || (year === "Other years" ? photo.year !== "2026" : photo.year === year)),
   );
 
   function filterBy(update: () => void) {
@@ -40,7 +41,7 @@ export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
               ))}
             </div>
             <div role="group" aria-label="Filter by year" className="flex flex-wrap gap-2">
-              {["All years", ...galleryYears].map((value) => (
+              {years.map((value) => (
                 <FilterPill key={value} active={year === value} onClick={() => filterBy(() => setYear(value))}>
                   {value}
                 </FilterPill>

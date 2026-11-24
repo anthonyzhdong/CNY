@@ -5,7 +5,7 @@ import { dayNames, type Event } from "@/lib/events";
 /** Downloads an all-day .ics entry. Add DTSTART times once they're confirmed. */
 export function AddToCalendar({ event }: { event: Event }) {
   function download() {
-    const start = dayNames[event.day].start;
+    const start = dayNames[event.day!].start;
     const ics = [
       "BEGIN:VCALENDAR",
       "VERSION:2.0",

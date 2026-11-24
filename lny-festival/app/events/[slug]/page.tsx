@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { Suspense } from "react";
 import { AddToCalendar } from "@/components/AddToCalendar";
 import { Band } from "@/components/Band";
 import { Illustration } from "@/components/Decoration";
@@ -26,18 +27,22 @@ export async function generateMetadata({ params }: PageProps<"/events/[slug]">):
 
 const bulletColours = ["bg-pink", "bg-lime", "bg-mint"];
 
-export default async function EventDetail({ params }: PageProps<"/events/[slug]">) {
+// Reading `params` ties the page to one URL, so it renders behind Suspense to keep the shared shell instant.
+export default function EventPage({ params }: PageProps<"/events/[slug]">) {
+  return (
+    <Suspense fallback={<Band tone="hero"><div className="min-h-[60vh]" /></Band>}>
+      <EventDetail params={params} />
+    </Suspense>
+  );
+}
+
+async function EventDetail({ params }: Pick<PageProps<"/events/[slug]">, "params">) {
   const event = getEvent((await params).slug);
   if (!event) notFound();
 
-  const day = dayNames[event.day];
+  const day = event.day && dayNames[event.day];
   const words = event.name.split(" ");
   const lastWord = words.pop();
-  const goodToKnow = [
-    ...(event.goodToKnow ?? []),
-    "Outdoor event — [rain plan].",
-    "[Accessibility details: step-free access, seating, accessible toilets].",
-  ];
 
   return (
     <>
@@ -55,8 +60,9 @@ export default async function EventDetail({ params }: PageProps<"/events/[slug]"
           <h1 className="font-serif text-h1">
             {words.join(" ")} <em className="text-red">{lastWord}</em>
           </h1>
+          {event.summary && <p className="text-[clamp(19px,1.7vw,23px)] leading-[1.45] text-ink-muted">{event.summary}</p>}
           <p className="font-mono text-sm uppercase text-red">
-            {day.short} Feb 2027 · [Time] · {event.place}
+            {event.date} 2027 · {event.time} · {event.place}
           </p>
         </section>
       </Band>
@@ -76,24 +82,59 @@ export default async function EventDetail({ params }: PageProps<"/events/[slug]"
             {event.description?.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}
-            <p>
-              Performed by <strong className="font-medium">{event.performer ?? "[PERFORMING GROUP]"}</strong>.
-            </p>
+            {event.schedule && (
+              <ul className="flex flex-col border-t border-line">
+                {event.schedule.map(({ time, what, detail }) => (
+                  <li key={what} className="flex flex-wrap gap-x-6 gap-y-1 border-b border-line py-3 last:border-b-0">
+                    {time && <span className="w-[170px] flex-none font-mono text-[15px] uppercase text-red">{time}</span>}
+                    <span className="flex min-w-0 flex-[1_1_240px] flex-col gap-1">
+                      {detail ? <span className="text-ink">{what}</span> : what}
+                      {detail && <span className="text-[17px] font-light leading-[1.55] text-ink-muted">{detail}</span>}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            )}
+            {!event.organiser && (
+              <p>
+                Performed by <strong className="font-medium">{event.performer ?? "[PERFORMING GROUP]"}</strong>.
+              </p>
+            )}
           </div>
-          <div className="flex max-w-[680px] flex-col gap-3.5 border-t border-line pt-6">
-            <h2 className="font-serif text-[34px]">Good to know</h2>
-            <ul className="flex flex-col gap-2.5 text-[17px] leading-[1.5] text-ink-soft">
-              {goodToKnow.map((item, index) => (
-                <li key={item} className="flex gap-3">
-                  <span
-                    aria-hidden="true"
-                    className={`mt-2 size-2 flex-none rounded-full ${bulletColours[index % bulletColours.length]}`}
-                  />
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </div>
+          {(event.organiser || event.free) && (
+            <dl className="flex max-w-[680px] flex-wrap gap-x-14 gap-y-4 border-t border-line pt-6">
+              {event.organiser && (
+                <div className="flex flex-col gap-1">
+                  <dt className="label text-red">Organisers</dt>
+                  <dd className="text-[19px] font-medium">{event.organiser}</dd>
+                </div>
+              )}
+              {event.free && (
+                <div className="flex flex-col gap-1">
+                  <dt className="label text-red">Entry</dt>
+                  <dd className="text-[19px] font-medium">
+                    Free event{event.register && <span className="font-normal text-ink-muted">, registration required</span>}
+                  </dd>
+                </div>
+              )}
+            </dl>
+          )}
+          {event.goodToKnow && (
+            <div className="flex max-w-[680px] flex-col gap-3.5 border-t border-line pt-6">
+              <h2 className="font-serif text-[34px]">Good to know</h2>
+              <ul className="flex flex-col gap-2.5 text-[17px] leading-[1.5] text-ink-soft">
+                {event.goodToKnow.map((item, index) => (
+                  <li key={item} className="flex gap-3">
+                    <span
+                      aria-hidden="true"
+                      className={`mt-2 size-2 flex-none rounded-full ${bulletColours[index % bulletColours.length]}`}
+                    />
+                    {item}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
         </div>
 
         <aside className="flex max-w-[420px] flex-[1_1_320px] flex-col gap-4">
@@ -102,20 +143,30 @@ export default async function EventDetail({ params }: PageProps<"/events/[slug]"
               <div className="flex flex-col gap-1">
                 <dt className="label text-red">When</dt>
                 <dd className="text-[18px] font-medium">
-                  {day.long} {day.date} 2027
+                  {day ? `${day.long} ${day.date}` : event.date} 2027
                   <br />
-                  [Start] – [Finish]
+                  {event.time}
                 </dd>
               </div>
               <div className="flex flex-col gap-1">
                 <dt className="label text-red">Where</dt>
-                <dd className="text-[18px] font-medium">{event.place}, Te Whanganui-a-Tara Wellington</dd>
+                <dd className="text-[18px] font-medium">
+                  {event.place}
+                  {event.period === "weekend" && ", Te Whanganui-a-Tara Wellington"}
+                </dd>
               </div>
             </dl>
-            <AddToCalendar event={event} />
-            <PillLink href="/map" size="lg" className="!min-h-[50px] justify-center">
-              See it on the festival map
-            </PillLink>
+            {event.register && (
+              <PillLink href={event.register} variant="solid" size="lg" className="!min-h-[50px] justify-center">
+                Register your attendance
+              </PillLink>
+            )}
+            {event.day && <AddToCalendar event={event} />}
+            {event.period === "weekend" && (
+              <PillLink href="/map" size="lg" className="!min-h-[50px] justify-center">
+                See it on the festival map
+              </PillLink>
+            )}
           </div>
           <div className="relative flex flex-col gap-2 rounded-sm bg-pink-soft px-6 py-[22px]">
             <span className="label text-red">Share</span>

@@ -1,65 +1,56 @@
 [
   {
+    "period": "weekend",
     "d": "sat",
-    "when": "Sat 20 Feb · Time TBC",
-    "name": "Opening ceremony",
-    "place": "TSB Bank Arena, Wellington",
-    "type": "Ceremony",
-    "img": "/images/photos/fan-dance.jpg",
-    "alt": "Dancers in white with painted fans"
+    "when": "Sat 20 Feb · 6–9.30pm",
+    "name": "Light up the night",
+    "summary": "Performances, pop-up activations, lanterns and fireworks",
+    "place": "Wellington CBD, Frank Kitts Park & Wellington Waterfront",
+    "type": "Performance",
+    "img": "/images/photos/Light up the night.jpg",
+    "alt": "Performers swing a dragon on poles in front of a crowd"
   },
   {
-    "d": "sat",
-    "when": "Sat 20 Feb · Time TBC",
-    "name": "Lion dance",
-    "place": "TSB Bank Arena, Wellington",
-    "type": "Performance",
+    "period": "weekend",
+    "d": "sun",
+    "when": "Sun 21 Feb · 10am–5pm",
+    "name": "A taste of Asia",
+    "summary": "Cuisine, crafts and cultural entertainment",
+    "place": "TSB Arena & Shed 6",
+    "type": "Food",
+    "img": "/images/photos/A taste of Asia.jpg",
+    "alt": "Dancers in costume perform on stage"
+  },
+  {
+    "period": "weekend",
+    "d": "sun",
+    "when": "Sun 21 Feb · 11am–4.30pm",
+    "name": "A flock of fun by the waterfront",
+    "summary": "Family activities, performances and food trucks",
+    "place": "Frank Kitts Park",
+    "type": "Family",
+    "img": "/images/photos/A flock of fun.jpg",
+    "alt": "A young dancer twirls a silk ribbon"
+  },
+  {
+    "period": "february",
+    "when": "Sat 8 Feb · 11am–4pm",
+    "name": "Vietnamese Lunar New Year Festival 2027",
+    "summary": "Xuân Hội Ngộ – Tết Xa Mà Gần. Tết, traditions and Vietnamese culture",
+    "place": "Walter Nash Stadium, Taita, Lower Hutt",
+    "type": "Family",
     "img": "/images/photos/lion-dance.jpg",
     "alt": "A golden lion dancer in front of a crowd"
   },
   {
+    "period": "february",
     "d": "sat",
-    "when": "Sat 20 Feb · Time TBC",
-    "name": "Dragon dance",
-    "place": "TSB Bank Arena, Wellington",
-    "type": "Performance",
-    "img": "/images/photos/dragon-dance.jpg",
-    "alt": "Performers swing a dragon on poles"
-  },
-  {
-    "d": "sat",
-    "when": "Sat 20 Feb · Time TBC",
-    "name": "Zodiac painting workshop",
-    "place": "Location TBC",
+    "when": "Sat 20 Feb · 6–9pm",
+    "name": "Lunar NY at Te Papa",
+    "summary": "Late-night culture, creativity and discovery",
+    "place": "Museum of New Zealand Te Papa Tongarewa",
     "type": "Workshop",
     "img": "/images/photos/zodiac-paintings.jpg",
     "alt": "Hand-painted zodiac cards on red paper"
-  },
-  {
-    "d": "sun",
-    "when": "Sun 21 Feb · All day",
-    "name": "Asian Market",
-    "place": "Shed 6, Wellington",
-    "type": "Food",
-    "img": "/images/photos/buns.jpg",
-    "alt": "Pan-fried buns on a griddle"
-  },
-  {
-    "d": "sun",
-    "when": "Sun 21 Feb · Time TBC",
-    "name": "Taiko drumming",
-    "place": "Location TBC",
-    "type": "Performance",
-    "img": "/images/photos/taiko.jpg",
-    "alt": "Taiko drummers play large drums"
-  },
-  {
-    "d": "sun",
-    "when": "Sun 21 Feb · Time TBC",
-    "name": "Ribbon dance & kids’ stage",
-    "place": "Location TBC",
-    "type": "Family",
-    "img": "/images/photos/ribbon-dance.jpg",
-    "alt": "A young dancer twirls a silk ribbon"
   }
 ]

@@ -29,15 +29,15 @@ export default function Events() {
                 Two days. One city. A world of celebration!
               </p>
               <p className="text-[clamp(17px,1.4vw,19px)] leading-[1.5] text-ink-muted">
-                Experience the colour, flavour and energy of Asia as Wellington’s CBD and waterfront come alive with
-                food, music, performances, cultural traditions from across Asia and a spectacular fireworks display.
+                Experience the colour, flavour and energy of Asia as Wellington’s CBD and waterfront come alive with food, music,
+                performances, cultural traditions from across Asia and a spectacular fireworks display.
               </p>
             </div>
             <div className="flex flex-col gap-2">
-              <p className="label text-ink-subtle">1–28 February | Lunar New Year (LNY) across Wellington</p>
+              <p className="label text-ink-subtle">1–28 February | Lunar New Year across Wellington</p>
               <p className="text-[clamp(17px,1.4vw,19px)] leading-[1.5] text-ink-muted">
-                The celebrations extend beyond festival weekend, with community-led events and experiences bringing
-                Wellington together throughout February.
+                The celebrations extend beyond festival weekend, with community-led events and experiences bringing Wellington
+                together throughout February.
               </p>
             </div>
           </div>
