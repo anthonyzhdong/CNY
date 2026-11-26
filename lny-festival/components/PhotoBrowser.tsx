@@ -9,19 +9,12 @@ import { FilterPill } from "@/components/Pill";
 import { photos } from "@/lib/media";
 
 const years = ["All years", "2026", "2025", "Pre-2024"];
-const pageSize = 16;
 
 export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
   const [year, setYear] = useState("All years");
-  const [visible, setVisible] = useState(pageSize);
   const [open, setOpen] = useState<number | null>(null);
 
   const matches = photos.filter((photo) => year === "All years" || photo.year === year);
-
-  function filterBy(update: () => void) {
-    update();
-    setVisible(pageSize);
-  }
 
   return (
     <>
@@ -31,7 +24,7 @@ export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
           <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4 border-t border-ink pt-6">
             <div role="group" aria-label="Filter by year" className="flex flex-wrap gap-2">
               {years.map((value) => (
-                <FilterPill key={value} active={year === value} onClick={() => filterBy(() => setYear(value))}>
+                <FilterPill key={value} active={year === value} onClick={() => setYear(value)}>
                   {value}
                 </FilterPill>
               ))}
@@ -57,7 +50,7 @@ export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
 
       <section aria-label="Photos" className="px-gutter pb-[clamp(88px,11vw,168px)]">
         <div className="gap-x-5 [columns:4_260px] mobile:gap-x-3 mobile:[columns:2]">
-          {matches.slice(0, visible).map((photo, index) => (
+          {matches.map((photo, index) => (
             <button
               key={photo.src}
               type="button"
@@ -78,17 +71,6 @@ export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
             </button>
           ))}
         </div>
-        {matches.length > visible && (
-          <div className="flex justify-center pt-10">
-            <button
-              type="button"
-              onClick={() => setVisible(visible + pageSize)}
-              className="min-h-12 rounded-full border border-ink px-7 text-[15px]"
-            >
-              Load more photos
-            </button>
-          </div>
-        )}
       </section>
 
       <Lightbox photos={matches} index={open} onChange={setOpen} onClose={() => setOpen(null)} />
