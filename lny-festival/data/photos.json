@@ -1,130 +1,1412 @@
 [
   {
-    "key": "dragon",
-    "src": "/images/photos/dragon-dance.jpg",
-    "alt": "Dragon dance on the waterfront",
-    "cat": "Performances",
+    "src": "/images/photos/photogallery2026/DJI_20260222135916_0010_D.jpg",
+    "alt": "2026 Lunar New Year Festival",
     "year": "2026",
-    "ratio": "16/10"
+    "ratio": "800/381"
   },
   {
-    "key": "buns",
-    "src": "/images/photos/buns.jpg",
-    "alt": "Pan-fried buns at the market",
-    "cat": "Food",
+    "src": "/images/photos/photogallery2026/DSC_1772.jpg",
+    "alt": "2026 Lunar New Year Festival",
     "year": "2026",
-    "ratio": "4/5"
+    "ratio": "5373/3022"
   },
   {
-    "key": "ribbon",
-    "src": "/images/photos/ribbon-dance.jpg",
-    "alt": "A young dancer with a silk ribbon",
-    "cat": "Performances",
+    "src": "/images/photos/photogallery2026/DSC_1785.jpg",
+    "alt": "2026 Lunar New Year Festival",
     "year": "2026",
-    "ratio": "3/4"
+    "ratio": "3234/1819"
   },
   {
-    "key": "zodiac",
-    "src": "/images/photos/zodiac-paintings.jpg",
-    "alt": "Hand-painted zodiac cards",
-    "cat": "Crafts",
+    "src": "/images/photos/photogallery2026/DSC_1858.jpg",
+    "alt": "2026 Lunar New Year Festival",
     "year": "2026",
-    "ratio": "1/1"
+    "ratio": "4423/2488"
   },
   {
-    "key": "lion",
-    "src": "/images/photos/lion-dance.jpg",
-    "alt": "Lion dance in front of a crowd",
-    "cat": "Performances",
+    "src": "/images/photos/photogallery2026/DSC_1868.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "5210/2931"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_1913.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "4680/2633"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_1936.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "4303/2420"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_1945.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_1946.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "1148/1607"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2000.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "3683/4604"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2006.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "2409/1355"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2252.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "1600/1067"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2299.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2529.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2544.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "1600/1067"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2562.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "759/800"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2682.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "1067/1600"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2723.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "1143/1600"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2753.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "1067/1600"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2912.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "1600/1067"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_2988.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "1387/1600"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_5417.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "2498/1405"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_5463.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "5050/2841"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_5493.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "3091/4327"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_5523.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_5667.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_7274.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "2663/1498"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_7287.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "5302/3535"
+  },
+  {
+    "src": "/images/photos/photogallery2026/DSC_7302.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "5479/3082"
+  },
+  {
+    "src": "/images/photos/photogallery2026/IMG_3013.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2026/IMG_3020.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2026/IMG_3025.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2026/IMG_3105.jpg",
+    "alt": "2026 Lunar New Year Festival",
+    "year": "2026",
+    "ratio": "16/9"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0001.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0022.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0024.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0029.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0033.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0043.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0105.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0257.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/2025_02_16_lunarfestival_by_sambath_0260.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2000/1333"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-011.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-024.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-026.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-035.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-037.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "7087/4725"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-041.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-042.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-048.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 Lunar New Year Festival Selects YL-057.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "7087/4725"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-009.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-047.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-065.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-067.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-071.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-100.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-105.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-113.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-138.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-142.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-145.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-154.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-162.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-163.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-171.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-175.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-193.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-219.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "7087/4725"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-232.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-241.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-249.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-265.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "4000/2667"
+  },
+  {
+    "src": "/images/photos/photogallery2025/250216 PCC Lunar New Year Festival YL-268.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "2667/4000"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00719.jpg",
+    "alt": "2025 Lunar New Year Festival",
     "year": "2025",
     "ratio": "3/2"
   },
   {
-    "key": "taiko",
-    "src": "/images/photos/taiko.jpg",
-    "alt": "Taiko drummers on the main stage",
-    "cat": "Performances",
+    "src": "/images/photos/photogallery2025/DSC00731.jpg",
+    "alt": "2025 Lunar New Year Festival",
     "year": "2025",
-    "ratio": "4/5"
-  },
-  {
-    "key": "fan",
-    "src": "/images/photos/fan-dance.jpg",
-    "alt": "Fan dancers in white",
-    "cat": "Performances",
-    "year": "2025",
-    "ratio": "3/4"
-  },
-  {
-    "key": "buns",
-    "src": "/images/photos/buns.jpg",
-    "alt": "Dumplings fresh from the steamer",
-    "cat": "Food",
-    "year": "2025",
-    "ratio": "1/1"
-  },
-  {
-    "key": "zodiac",
-    "src": "/images/photos/zodiac-paintings.jpg",
-    "alt": "Calligraphy at the craft stalls",
-    "cat": "Crafts",
-    "year": "2024",
-    "ratio": "4/5"
-  },
-  {
-    "key": "dragon",
-    "src": "/images/photos/dragon-dance.jpg",
-    "alt": "The dragon winds through the crowd",
-    "cat": "Crowd",
-    "year": "2024",
-    "ratio": "4/3"
-  },
-  {
-    "key": "lion",
-    "src": "/images/photos/lion-dance.jpg",
-    "alt": "Lion dancers taking a bow",
-    "cat": "Crowd",
-    "year": "2024",
-    "ratio": "4/5"
-  },
-  {
-    "key": "ribbon",
-    "src": "/images/photos/ribbon-dance.jpg",
-    "alt": "Ribbon dance on the lawn",
-    "cat": "Performances",
-    "year": "2024",
-    "ratio": "16/10"
-  },
-  {
-    "key": "taiko",
-    "src": "/images/photos/taiko.jpg",
-    "alt": "Drummers warming up backstage",
-    "cat": "Crowd",
-    "year": "2023",
     "ratio": "3/2"
   },
   {
-    "key": "fan",
-    "src": "/images/photos/fan-dance.jpg",
-    "alt": "Fans raised for the finale",
-    "cat": "Performances",
-    "year": "2023",
-    "ratio": "4/5"
+    "src": "/images/photos/photogallery2025/DSC00732.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
   },
   {
-    "key": "buns",
-    "src": "/images/photos/buns.jpg",
-    "alt": "The queue for bao",
-    "cat": "Food",
-    "year": "2023",
-    "ratio": "3/4"
+    "src": "/images/photos/photogallery2025/DSC00734.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
   },
   {
-    "key": "zodiac",
-    "src": "/images/photos/zodiac-paintings.jpg",
-    "alt": "Lantern-making workshop",
-    "cat": "Crafts",
-    "year": "2023",
-    "ratio": "1/1"
+    "src": "/images/photos/photogallery2025/DSC00735.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00742.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00753.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00770.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00838.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00882.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00916.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00932.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallery2025/DSC00985.jpg",
+    "alt": "2025 Lunar New Year Festival",
+    "year": "2025",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-1047.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-1060.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-1238.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-1733.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-1792.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-2204.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3405.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3445.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3465.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3485.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3492.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3578.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3885.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3937.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-3961.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-4001.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-4541.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-5167.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-19-A4-5658.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-010177.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-020191.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-030194.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-040436.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-050437.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-060443.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-070448.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-080465.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-09.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-10.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2284"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-11.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-12.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-13.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-140515.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-15.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-160525.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-170546.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-190929.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-201134.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-211455.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-221541.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-231571.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-241649.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-251661.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-261729.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-271912.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-282049.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-292239.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-302401.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-312580.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-322603.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-332657.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-342674.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-352706.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-362768.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-372830.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-382862.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-392871.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-402907.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-413348.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-423372.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-433378.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-443480.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-453492.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-463504.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-473587.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-483611.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-493651.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-503666.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-513692.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-523730.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-543817.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-553861.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-563867.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-573873.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-583881.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-593889.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-603905.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-613958.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-624131.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-634237.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-644262.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-654324.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-664344.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-674380.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-684408.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-694445.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-704533.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-714558.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-724577.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-734596.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-744653.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-754691.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-764723.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-774744.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-784815.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-794830.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-804878.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-814882.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-824904.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-835021.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-845105.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-855141.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-865210.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-875271.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-885312.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-895353.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-905384.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-915397.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-925732.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-935746.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3425/2283"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-945803.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-955833.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/CNY-Sneakpeek-A4-965965.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2283/3425"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC00684.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC01135.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC01233.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC01237.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC01255.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC01286.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC01474.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC01996.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "5807/3265"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02195.JPG",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02214.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "1799/2699"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02229.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02264.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02382.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02491.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02611.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02778.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "5261/3949"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02788.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2831/1887"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02816.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "1331/2000"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02897.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC02954.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "5680/3787"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC07666.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "2355/3532"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC07729.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3011/4515"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC07879.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC07909.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC07915.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC07918.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC07923.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC07993.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC08000.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC08003.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "1815/1816"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC08033.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC08042.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "341/227"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC09091.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC09399.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "3/2"
+  },
+  {
+    "src": "/images/photos/photogallerypre2024/DSC09560.jpg",
+    "alt": "Lunar New Year Festival, before 2024",
+    "year": "Pre-2024",
+    "ratio": "5899/3932"
   }
 ]

@@ -9,7 +9,7 @@ import { PageHero } from "@/components/PageHero";
 import { Photo } from "@/components/Photo";
 import { FilterPill, PillLink } from "@/components/Pill";
 import { VideoModal } from "@/components/VideoModal";
-import { films, galleryYears, photos } from "@/lib/media";
+import { films, galleryYears } from "@/lib/media";
 
 // Repeating tile spans for the editorial grid.
 const tileSpans = [
@@ -22,18 +22,21 @@ const tileSpans = [
   "",
 ];
 
-// The placeholder set has seven distinct images, so every year tab shows all of
-// them, rotated per year, until real photos replace data/photos.json.
-const tileImages = ["dragon-dance", "ribbon-dance", "zodiac-paintings", "buns", "lion-dance", "taiko", "fan-dance"];
+// Placeholder set: every year tab shows these seven images, rotated per year,
+// until the archive gets its own per-year selection.
+const tileImages = [
+  { src: "/images/photos/dragon-dance.jpg", alt: "Dragon dance on the waterfront" },
+  { src: "/images/photos/ribbon-dance.jpg", alt: "A young dancer with a silk ribbon" },
+  { src: "/images/photos/zodiac-paintings.jpg", alt: "Hand-painted zodiac cards" },
+  { src: "/images/photos/buns.jpg", alt: "Pan-fried buns at the market" },
+  { src: "/images/photos/lion-dance.jpg", alt: "Lion dance in front of a crowd" },
+  { src: "/images/photos/taiko.jpg", alt: "Taiko drummers on the main stage" },
+  { src: "/images/photos/fan-dance.jpg", alt: "Fan dancers in white" },
+];
 
 function tilesFor(year: string) {
   const offset = galleryYears.indexOf(year);
-  const rotated = [...tileImages.slice(offset), ...tileImages.slice(0, offset)];
-
-  return rotated.map((image) => {
-    const src = `/images/photos/${image}.jpg`;
-    return photos.find((photo) => photo.src === src && photo.year === year) ?? photos.find((photo) => photo.src === src)!;
-  });
+  return [...tileImages.slice(offset), ...tileImages.slice(0, offset)];
 }
 
 const [firstFilm, ...otherFilms] = films.slice(0, 3);

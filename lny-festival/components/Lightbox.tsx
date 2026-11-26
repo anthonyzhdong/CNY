@@ -51,12 +51,12 @@ export function Lightbox({ photos, index, onChange, onClose }: LightboxProps) {
               <CloseIcon size={20} />
             </button>
           </div>
-          <div className="flex min-h-0 flex-auto items-center justify-center gap-5">
+          <div className="flex min-h-0 flex-auto items-center justify-center gap-5 mobile:gap-2">
             <button
               type="button"
               aria-label="Previous photo"
               onClick={() => step(-1)}
-              className={`${control} size-[52px] bg-pink mobile:hidden`}
+              className={`${control} size-[52px] bg-pink mobile:size-10`}
             >
               <ArrowIcon direction="left" size={22} />
             </button>
@@ -67,7 +67,7 @@ export function Lightbox({ photos, index, onChange, onClose }: LightboxProps) {
               type="button"
               aria-label="Next photo"
               onClick={() => step(1)}
-              className={`${control} size-[52px] bg-lime mobile:hidden`}
+              className={`${control} size-[52px] bg-lime mobile:size-10`}
             >
               <ArrowIcon size={22} />
             </button>
@@ -75,17 +75,7 @@ export function Lightbox({ photos, index, onChange, onClose }: LightboxProps) {
           <div className="mx-auto flex w-full max-w-[1200px] flex-wrap items-end justify-between gap-x-6 gap-y-3">
             <div className="flex flex-col gap-1">
               <p className="font-serif text-[28px] leading-[1.15]">{photo.alt}</p>
-              <p className="text-sm text-line">
-                {photo.year} · {photo.cat} · Photo: {photo.credit ?? "[Photographer name]"}
-              </p>
-            </div>
-            <div className="flex gap-2">
-              <button type="button" aria-label="Previous photo" onClick={() => step(-1)} className={`${control} size-11 bg-pink`}>
-                <ArrowIcon direction="left" size={20} />
-              </button>
-              <button type="button" aria-label="Next photo" onClick={() => step(1)} className={`${control} size-11 bg-lime`}>
-                <ArrowIcon size={20} />
-              </button>
+              {photo.credit && <p className="text-sm text-line">Photo: {photo.credit}</p>}
             </div>
           </div>
         </>

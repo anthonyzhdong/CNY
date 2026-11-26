@@ -8,19 +8,15 @@ import { Photo } from "@/components/Photo";
 import { FilterPill } from "@/components/Pill";
 import { photos } from "@/lib/media";
 
-const categories = ["All", "Performances", "Food", "Crafts", "Crowd"];
-const years = ["All years", "2026", "Other years"];
+const years = ["All years", "2026", "2025", "Pre-2024"];
 const pageSize = 16;
 
 export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
-  const [category, setCategory] = useState("All");
   const [year, setYear] = useState("All years");
   const [visible, setVisible] = useState(pageSize);
   const [open, setOpen] = useState<number | null>(null);
 
-  const matches = photos.filter(
-    (photo) => (category === "All" || photo.cat === category) && (year === "All years" || (year === "Other years" ? photo.year !== "2026" : photo.year === year)),
-  );
+  const matches = photos.filter((photo) => year === "All years" || photo.year === year);
 
   function filterBy(update: () => void) {
     update();
@@ -33,13 +29,6 @@ export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
         <div className="relative flex flex-col gap-10 px-gutter pb-[clamp(48px,6vw,88px)] pt-[clamp(64px,9vw,136px)]">
           {intro}
           <div className="flex flex-wrap items-center justify-between gap-x-8 gap-y-4 border-t border-ink pt-6">
-            <div role="group" aria-label="Filter by type" className="flex flex-wrap gap-2">
-              {categories.map((value) => (
-                <FilterPill key={value} active={category === value} onClick={() => filterBy(() => setCategory(value))}>
-                  {value}
-                </FilterPill>
-              ))}
-            </div>
             <div role="group" aria-label="Filter by year" className="flex flex-wrap gap-2">
               {years.map((value) => (
                 <FilterPill key={value} active={year === value} onClick={() => filterBy(() => setYear(value))}>
@@ -70,7 +59,7 @@ export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
         <div className="gap-x-5 [columns:4_260px] mobile:gap-x-3 mobile:[columns:2]">
           {matches.slice(0, visible).map((photo, index) => (
             <button
-              key={`${photo.year}-${photo.alt}`}
+              key={photo.src}
               type="button"
               aria-label={`Open photo: ${photo.alt}`}
               onClick={() => setOpen(index)}
@@ -84,7 +73,7 @@ export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
                 className="transition-[filter] duration-200 group-hover:brightness-[0.92]"
               />
               <span className="block pt-2 font-mono text-[11px] uppercase text-ink-subtle">
-                {photo.year} · {photo.cat}
+                {photo.year}
               </span>
             </button>
           ))}

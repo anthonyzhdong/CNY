@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Band } from "@/components/Band";
 import { PageHero } from "@/components/PageHero";
 
@@ -7,25 +8,55 @@ export const metadata: Metadata = {
   description: "Thank you to the sponsors and supporters who make Wellington’s Lunar New Year Festival possible.",
 };
 
-// [Sponsor logos TBC]: tiles show names until real logos are supplied.
-const principal = [
-  { label: "Principal sponsor", name: "[Golden Sun logo]", size: "text-[26px]" },
-  { label: "Organised by", name: "[Asian Events Trust logo]", size: "text-[22px]" },
-  { label: "Supported by", name: "[Wellington City Council logo]", size: "text-[22px]" },
+// Logos: set `logo` to a path under /public (e.g. "/images/brand/golden-sun.png");
+// tiles fall back to the sponsor name until a logo is supplied.
+type Sponsor = { name: string; logo?: string };
+
+const tiers: { title: string; sponsors: Sponsor[]; grid: string; tile: string }[] = [
+  {
+    title: "Principal sponsor",
+    sponsors: [{ name: "Golden Sun", logo: "/images/brand/golden-sun.png" }],
+    grid: "grid-cols-[minmax(0,420px)]",
+    tile: "aspect-[3/2] bg-white p-8 text-[26px] font-medium",
+  },
+  {
+    title: "Dragon sponsors",
+    sponsors: [
+      { name: "Four Winds Foundation", logo: "/images/brand/four-winds.png" },
+      { name: "Ethnic Communities Development Fund", logo: "/images/brand/ethnic-communities.jpg" },
+      { name: "Wellington City Council", logo: "/images/brand/wellington-city-council.png" },
+      { name: "Venues Wellington", logo: "/images/brand/venues-wellington.png" },
+      { name: "Stonewood Homes", logo: "/images/brand/stonewood-homes.png" },
+    ],
+    grid: "grid-cols-[repeat(auto-fill,minmax(240px,1fr))] gap-5",
+    tile: "aspect-[3/2] bg-white p-6 text-lg font-medium",
+  },
+  {
+    title: "Lion sponsors",
+    sponsors: [
+      { name: "Armstrongs", logo: "/images/brand/armstrongs.png" },
+      { name: "NW Group", logo: "/images/brand/nw-group.jpg" },
+      { name: "The Embassy of the People’s Republic of China", logo: "/images/brand/embassy-prc.png" },
+      { name: "Confucius Institute of Victoria University of Wellington", logo: "/images/brand/confucius-institute.jpg" },
+      { name: "Chinese Poll Tax Heritage Trust", logo: "/images/brand/chinese-poll-tax-heritage-trust.png" },
+      { name: "Oaks Hotels, Resorts & Suites Wellington", logo: "/images/brand/oaks-hotels.png" },
+    ],
+    grid: "grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4",
+    tile: "aspect-video bg-white p-4 text-[15px]",
+  },
+  {
+    title: "Supporters",
+    sponsors: [
+      { name: "Tantrum Productions", logo: "/images/brand/tantrum-productions.png" },
+      { name: "Pyrostar International", logo: "/images/brand/pyrostar.jpeg" },
+      { name: "Wellington Airport", logo: "/images/brand/wellington-airport.png" },
+      { name: "Wellington Xiamen Association", logo: "/images/brand/wellington-xiamen-association.png" },
+      { name: "Max Value Supermarket", logo: "/images/brand/max-value.jpeg" },
+    ],
+    grid: "grid-cols-[repeat(auto-fill,minmax(160px,1fr))] gap-3",
+    tile: "aspect-video border border-line bg-white p-3 text-sm",
+  },
 ];
-
-const sponsors = [
-  "Four Winds Foundation",
-  "Chinese Poll Tax Heritage Trust",
-  "Ministry for Ethnic Communities",
-  "NW Group",
-  "Embassy of the People’s Republic of China",
-  "Confucius Institute, Victoria University of Wellington",
-];
-
-const supporters = ["Good Company Arts", "PyroStar International", "Tantrum Productions", "Max Value", "WellingtonNZ", "Te Papa"];
-
-const tile = "box-content flex aspect-video items-center justify-center rounded-sm text-center text-ink-muted";
 
 export default function Sponsors() {
   return (
@@ -41,7 +72,7 @@ export default function Sponsors() {
             </>
           }
           introClass="max-w-[580px]"
-          intro="The festival happens because of the generous organisations who back it. A big thank you to all of our sponsors and supporters."
+          intro="We thank our funders, sponsors, and supporters for their generous support of the festival through financial support and in-kind services."
           art={{
             name: "sheep-chopped",
             box: "aspect-square max-w-[340px] flex-[1_1_260px]",
@@ -51,38 +82,28 @@ export default function Sponsors() {
       </Band>
 
       <Band tone="butter">
-        <section className="mx-gutter grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-6 border-t border-ink py-9">
-          {principal.map(({ label, name, size }) => (
-            <div key={label} className="flex flex-col gap-3.5">
-              <span className="label text-red">{label}</span>
-              <div
-                className={`box-content flex aspect-[3/2] items-center justify-center rounded-sm bg-white p-6 text-center font-medium ${size}`}
-              >
-                {name}
-              </div>
+        {tiers.map(({ title, sponsors, grid, tile }, i) => (
+          <section
+            key={title}
+            className={`mx-gutter flex flex-col gap-[18px] border-t py-9 ${i === 0 ? "border-ink" : "border-line"}`}
+          >
+            <h2 className="font-serif text-4xl">{title}</h2>
+            <div className={`grid ${grid}`}>
+              {sponsors.map(({ name, logo }) => (
+                <div
+                  key={name}
+                  className={`relative flex items-center justify-center rounded-sm text-center text-ink-muted ${tile}`}
+                >
+                  {logo ? (
+                    <Image src={logo} alt={name} fill sizes="420px" className="object-contain p-[inherit]" />
+                  ) : (
+                    name
+                  )}
+                </div>
+              ))}
             </div>
-          ))}
-        </section>
-        <section className="mx-gutter flex flex-col gap-[18px] border-t border-line py-9">
-          <h2 className="font-serif text-4xl">Sponsors</h2>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(200px,1fr))] gap-4">
-            {sponsors.map((name) => (
-              <div key={name} className={`${tile} bg-white p-4 text-[15px]`}>
-                {name}
-              </div>
-            ))}
-          </div>
-        </section>
-        <section className="mx-gutter flex flex-col gap-[18px] border-t border-line py-9">
-          <h2 className="font-serif text-4xl">Supporters of the festival</h2>
-          <div className="grid grid-cols-[repeat(auto-fill,minmax(160px,1fr))] gap-3">
-            {supporters.map((name) => (
-              <div key={name} className={`${tile} border border-line p-3 text-sm`}>
-                {name}
-              </div>
-            ))}
-          </div>
-        </section>
+          </section>
+        ))}
       </Band>
 
       <section className="relative mx-gutter mb-[clamp(56px,6vw,88px)] mt-[clamp(32px,4vw,56px)] flex flex-wrap items-center justify-between gap-5 rounded-sm bg-lime p-[clamp(32px,4vw,56px)] text-moss-deep">

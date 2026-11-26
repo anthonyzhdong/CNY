@@ -4,7 +4,6 @@ import rawPhotos from "@/data/photos.json";
 export type Photo = {
   src: string;
   alt: string;
-  cat: "Performances" | "Food" | "Crafts" | "Crowd";
   year: string;
   ratio: string;
   credit?: string;
