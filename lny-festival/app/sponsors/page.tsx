@@ -106,6 +106,7 @@ export default function Sponsors() {
         ))}
       </Band>
 
+      {/* "Become a sponsor" banner: hidden for now.
       <section className="relative mx-gutter mb-[clamp(56px,6vw,88px)] mt-[clamp(32px,4vw,56px)] flex flex-wrap items-center justify-between gap-5 rounded-sm bg-lime p-[clamp(32px,4vw,56px)] text-moss-deep">
         <div className="flex max-w-[620px] flex-col gap-2.5">
           <h2 className="font-serif text-[clamp(32px,3.4vw,48px)] leading-[1.05]">
@@ -116,6 +117,7 @@ export default function Sponsors() {
           </p>
         </div>
       </section>
+      */}
     </>
   );
 }
