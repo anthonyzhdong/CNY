@@ -53,26 +53,6 @@ export function SiteFooter() {
           </ul>
         </div>
 
-        <form className="flex max-w-[420px] flex-[1_1_300px] flex-col gap-2.5">
-          <label htmlFor="footer-email" className="text-[15px] font-medium">
-            Subscribe to our e-newsletter
-          </label>
-          <div className="flex flex-wrap gap-2">
-            <input
-              id="footer-email"
-              type="email"
-              placeholder=""
-              className="min-h-11 min-w-0 flex-[1_1_200px] rounded-full border border-ink bg-beige px-4 text-[15px]"
-            />
-            <button
-              type="button"
-              className="min-h-11 cursor-pointer rounded-full bg-pink px-5 text-[15px] font-medium text-ink"
-            >
-              Sign up
-            </button>
-          </div>
-        </form>
-
         <nav
           aria-label="Footer"
           className="grid flex-[1_1_300px] grid-cols-2 content-start gap-x-6 gap-y-2.5 text-[15px]"

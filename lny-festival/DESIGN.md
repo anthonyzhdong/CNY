@@ -121,7 +121,6 @@ A `<Band tone="hero | white | mint | butter">` component covers all of this.
   - White background. A lantern icon peeks over the top-right edge (`top: -96px`, bobbing).
   - Centred full logo (`brand/festival-logo.png`, max-width 480px).
   - Mission line in serif: "Celebrating cultural diversity in Wellington and building strong communities." and "Presented by the Asian Events Trust · Sponsored by Golden Sun".
-  - Newsletter form: an email input with a beige fill and round corners, plus a pink "Sign up" button.
   - A two-column nav grid: Events, Festival map, Get involved, Are you a sheep?, Traditions, Gallery archive, Festival films, Media, Sponsors, About, Contact us.
   - Bottom row: "Te Whanganui-a-Tara Wellington · 2027", Accessibility, Privacy, Instagram, Facebook.
 - **`PageHero`**: a mono pill label, a big serif H1 with an italic red accent word, an intro paragraph, and usually a bobbing illustration over the pink morph glow on the right (hidden under 720px).
