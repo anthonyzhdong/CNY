@@ -6,18 +6,18 @@
     "name": "Light up the night",
     "summary": "Performances, pop-up activations, lanterns and fireworks",
     "place": "Wellington CBD, Frank Kitts Park & Wellington Waterfront",
-    "type": "Performance",
+    "type": ["Performance", "Family"],
     "img": "/images/photos/Light up the night.jpg",
     "alt": "Performers swing a dragon on poles in front of a crowd"
   },
   {
     "period": "weekend",
     "d": "sun",
-    "when": "Sun 21 Feb · 10am–5pm",
+    "when": "Sun 21 Feb · 10.30am–5pm",
     "name": "A taste of Asia",
     "summary": "Cuisine, crafts and cultural entertainment",
     "place": "TSB Arena & Shed 6",
-    "type": "Food",
+    "type": ["Family", "Food", "Performance"],
     "img": "/images/photos/A taste of Asia.jpg",
     "alt": "Dancers in costume perform on stage"
   },
@@ -28,7 +28,7 @@
     "name": "A flock of fun by the waterfront",
     "summary": "Family activities, performances and food trucks",
     "place": "Frank Kitts Park",
-    "type": "Family",
+    "type": ["Family", "Performance", "Food", "Workshop"],
     "img": "/images/photos/A flock of fun.jpg",
     "alt": "A young dancer twirls a silk ribbon"
   },
@@ -39,8 +39,8 @@
     "summary": "Xuân Hội Ngộ – Tết Xa Mà Gần. Tết, traditions and Vietnamese culture",
     "place": "Walter Nash Stadium, Taita, Lower Hutt",
     "type": "Family",
-    "img": "/images/photos/lion-dance.jpg",
-    "alt": "A golden lion dancer in front of a crowd"
+    "img": "/images/photos/Xuan Hoi Ngo.png",
+    "alt": "Xuân Hội Ngộ – Tết Xa Mà Gần poster: illustrated goats with peach-blossom antlers above teal mountains"
   },
   {
     "period": "february",
@@ -50,7 +50,7 @@
     "summary": "Late-night culture, creativity and discovery",
     "place": "Museum of New Zealand Te Papa Tongarewa",
     "type": "Workshop",
-    "img": "/images/photos/zodiac-paintings.jpg",
-    "alt": "Hand-painted zodiac cards on red paper"
+    "img": "/images/photos/DSC_9825-4.jpeg",
+    "alt": "A child peeks out from under a red lion dance head as smiling onlookers wave flags"
   }
 ]

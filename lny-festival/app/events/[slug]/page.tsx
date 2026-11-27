@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Suspense } from "react";
@@ -50,7 +51,11 @@ async function EventDetail({ params }: Pick<PageProps<"/events/[slug]">, "params
         <section className="flex flex-col gap-5 px-gutter pb-8 pt-[clamp(32px,5vw,72px)]">
           <BackLink href="/events">← All events</BackLink>
           <div className="flex flex-wrap gap-2">
-            <Tag className={typeColours[event.type]}>{event.type}</Tag>
+            {event.types.map((type) => (
+              <Tag key={type} className={typeColours[type]}>
+                {type}
+              </Tag>
+            ))}
             {event.tags?.map(({ label, colour }) => (
               <Tag key={label} className={colour}>
                 {label}
@@ -69,14 +74,26 @@ async function EventDetail({ params }: Pick<PageProps<"/events/[slug]">, "params
 
       <section className="flex flex-wrap items-start gap-x-14 gap-y-10 px-gutter pb-[clamp(56px,7vw,104px)]">
         <div className="flex min-w-0 flex-[999_1_560px] flex-col gap-8">
-          <Photo
-            src={event.img}
-            alt={event.alt}
-            ratio="16/9"
-            position={event.imgPosition}
-            sizes="(max-width: 720px) 100vw, 66vw"
-            preload
-          />
+          {event.imgFull ? (
+            <Image
+              src={event.img}
+              alt={event.alt}
+              width={event.imgFull.width}
+              height={event.imgFull.height}
+              sizes="(max-width: 720px) 100vw, 560px"
+              preload
+              className="h-auto w-full max-w-[560px] rounded-sm"
+            />
+          ) : (
+            <Photo
+              src={event.img}
+              alt={event.alt}
+              ratio="16/9"
+              position={event.imgPosition}
+              sizes="(max-width: 720px) 100vw, 66vw"
+              preload
+            />
+          )}
           <div className="flex max-w-[680px] flex-col gap-5 text-[19px] leading-[1.6] text-ink-soft">
             <p className="text-[22px] leading-[1.45] text-ink">{event.lede ?? "[Event description]"}</p>
             {event.description?.map((paragraph) => (

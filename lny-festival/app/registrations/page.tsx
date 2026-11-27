@@ -117,8 +117,11 @@ export default function Registrations() {
           art={{ name: "sheep-scuffle", box: "aspect-square max-w-[400px] flex-[1_1_280px]", fullGlow: true }}
         >
           <p className="max-w-[560px] text-[clamp(16px,1.3vw,18px)] leading-[1.5] text-ink-subtle">
-            Please note registration does not guarantee acceptance. Confirmation of participation will be advised
-            mid-December.
+            2027 registrations closed. Email{" "}
+            <a href="mailto:lnywellington@gmail.com" className="underline underline-offset-2">
+              lnywellington@gmail.com
+            </a>{" "}
+            to be placed on list for consideration for 2028 festival.
           </p>
           <span className="inline-flex items-center gap-2.5 self-start rounded-full bg-white px-[18px] py-2.5 text-[15px]">
             <span aria-hidden="true" className="size-2.5 rounded-full bg-red" />

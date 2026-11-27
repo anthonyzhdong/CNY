@@ -19,10 +19,15 @@ export type Event = {
   /** Short line under the name, e.g. "Cuisine, crafts and cultural entertainment". */
   summary?: string;
   place: string;
+  /** Primary type (the first of `types`), used for colour and related events. */
   type: EventType;
+  /** Every type the event belongs to, in display order. */
+  types: EventType[];
   img: string;
   alt: string;
   imgPosition?: string;
+  /** Show the whole image at its own shape on the event page (e.g. a portrait poster) instead of cropping to 16:9. */
+  imgFull?: { width: number; height: number };
   tags?: { label: string; colour: string }[];
   lede?: string;
   description?: string[];
@@ -91,7 +96,6 @@ const details: Record<string, Partial<Event>> = {
     free: true,
   },
   "a-flock-of-fun-by-the-waterfront": {
-    tags: [{ label: "Family friendly", colour: "bg-mint" }],
     lede: "A fun-filled celebration for the young and young at heart. Bring the whole family down to Wellington’s waterfront for a baa-rilliant afternoon of interactive activities and entertainment for all ages, including performances, give-it-a-go workshops, face painting, kids’ activities and food trucks.",
     description: ["There’s plenty to see, try and explore against the beautiful backdrop of the waterfront."],
     organiser: "Asian Events Trust",
@@ -110,6 +114,7 @@ const details: Record<string, Partial<Event>> = {
     related: ["dragon-dance", "taiko-drumming", "asian-market"],
   },
   "vietnamese-lunar-new-year-festival-2027": {
+    imgFull: { width: 3508, height: 4961 },
     lede: "Celebrate the Year of the Goat with Viet Hub NZ, who are bringing a little piece of Vietnam to Lower Hutt, filled with delicious food, colourful performances, cultural discoveries, hands-on workshops and plenty of festive fun!",
     schedule: [
       {
@@ -171,12 +176,14 @@ const details: Record<string, Partial<Event>> = {
 export const events: Event[] = rawEvents.map(({ d, ...event }) => {
   const slug = slugify(event.name);
   const [date, time] = event.when.split(" · ");
+  const types = [event.type].flat() as EventType[];
   return {
     ...event,
     slug,
     period: event.period as EventPeriod,
     day: d as Event["day"],
-    type: event.type as EventType,
+    type: types[0],
+    types,
     date,
     time,
     ...details[slug],

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { activeLayout, eventLayouts } from "@/components/event-layouts";
 import { FilterPill } from "@/components/Pill";
-import { events, periods, type EventPeriod } from "@/lib/events";
+import { events, periods, type EventPeriod, type EventType } from "@/lib/events";
 
 const types = ["All", "Performance", "Food", "Family", "Workshop"];
 
@@ -12,7 +12,7 @@ export function EventBrowser() {
   const [type, setType] = useState("All");
 
   const matches = events.filter(
-    (event) => event.period === period && (type === "All" || event.type === type),
+    (event) => event.period === period && (type === "All" || event.types.includes(type as EventType)),
   );
   const EventList = eventLayouts[activeLayout];
 

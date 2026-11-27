@@ -31,7 +31,7 @@ export default function FestivalMap() {
               Find your <em className="text-red">flock</em>
             </>
           }
-          intro="Tap a zone on the map to see what’s happening there — the 2027 map is coming soon."
+          intro="2027 maps and programmes are coming soon."
           // aside={
             // <PillLink href="#" variant="solid" size="lg">
             //   Download printable map (PDF)

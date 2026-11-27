@@ -8,7 +8,7 @@ import { Photo } from "@/components/Photo";
 import { FilterPill } from "@/components/Pill";
 import { photos } from "@/lib/media";
 
-const years = ["All years", "2026", "2025", "Pre-2024"];
+const years = ["All years", "2026", "2025", "2024", "Pre-2024"];
 
 export function PhotoBrowser({ intro }: { intro: React.ReactNode }) {
   const [year, setYear] = useState("All years");

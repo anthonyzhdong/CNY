@@ -45,9 +45,9 @@ export function SiteFooter() {
               </a>
             </li>
             <li>
-              <a href="mailto:linda@asianeventstrust.co.nz" className="flex items-center gap-2 break-all">
+              <a href="mailto:lnywellington@gmail.com" className="flex items-center gap-2 break-all">
                 <MailIcon size={18} />
-                linda@asianeventstrust.co.nz
+                lnywellington@gmail.com
               </a>
             </li>
           </ul>

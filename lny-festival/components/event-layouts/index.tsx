@@ -11,9 +11,15 @@ export type EventListProps = { events: Event[] };
  */
 export const activeLayout: keyof typeof eventLayouts = "grid";
 
-function TypeChip({ type }: { type: Event["type"] }) {
+function TypeChips({ types }: { types: Event["types"] }) {
   return (
-    <span className={`self-start rounded-[6px] px-2.5 py-1 text-[13px] font-medium ${typeColours[type]}`}>{type}</span>
+    <>
+      {types.map((type) => (
+        <span key={type} className={`self-start rounded-[6px] px-2.5 py-1 text-[13px] font-medium ${typeColours[type]}`}>
+          {type}
+        </span>
+      ))}
+    </>
   );
 }
 
@@ -40,10 +46,12 @@ function Grid({ events }: EventListProps) {
         <Link key={event.slug} href={`/events/${event.slug}`} className="flex flex-col gap-3 text-ink">
           <div className="relative">
             <Photo src={event.img} alt={event.alt} ratio="4/3" sizes="(max-width: 720px) 100vw, 25vw" />
-            <span
-              className={`absolute left-3 top-3 rounded-full px-3 py-[5px] text-[13px] font-medium text-ink ${typeColours[event.type]}`}
-            >
-              {event.type}
+            <span className="absolute left-3 right-3 top-3 flex flex-wrap gap-1.5">
+              {event.types.map((type) => (
+                <span key={type} className={`rounded-full px-3 py-[5px] text-[13px] font-medium text-ink ${typeColours[type]}`}>
+                  {type}
+                </span>
+              ))}
             </span>
           </div>
           <span className="label text-red">{event.when}</span>
@@ -75,7 +83,7 @@ function Timetable({ events }: EventListProps) {
               <span className="flex min-w-0 flex-col gap-2">
                 <span className="font-serif text-[clamp(26px,2.4vw,34px)] leading-[1.05]">{event.name}</span>
                 <span className="flex flex-wrap items-center gap-x-3.5 gap-y-2">
-                  <TypeChip type={event.type} />
+                  <TypeChips types={event.types} />
                   <span className="text-[15px] text-ink-muted">{event.place}</span>
                 </span>
               </span>
@@ -108,7 +116,7 @@ function TwoDayColumns({ events }: EventListProps) {
                 <span className="font-mono text-[13px] text-red">[{event.time}]</span>
                 <span className="font-serif text-[28px] leading-[1.05]">{event.name}</span>
                 <span className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                  <TypeChip type={event.type} />
+                  <TypeChips types={event.types} />
                   <span className="text-sm text-ink-muted">{event.place}</span>
                 </span>
               </span>
@@ -152,7 +160,7 @@ function FeaturedPlusList({ events }: EventListProps) {
                 </span>
                 <span className="font-serif text-[30px] leading-[1.05]">{event.name}</span>
                 <span className="flex flex-wrap items-center gap-x-3 gap-y-2">
-                  <TypeChip type={event.type} />
+                  <TypeChips types={event.types} />
                   <span className="text-sm text-ink-muted">{event.place}</span>
                 </span>
               </span>
@@ -191,7 +199,7 @@ function BigTypeIndex({ events }: EventListProps) {
           </span>
           <span className="flex items-center gap-3.5">
             <span className="font-mono text-[13px] text-ink-subtle">{String(index + 1).padStart(2, "0")}</span>
-            <TypeChip type={event.type} />
+            <TypeChips types={event.types} />
           </span>
         </Link>
       ))}
@@ -216,9 +224,13 @@ function AlternatingEditorial({ events }: EventListProps) {
             className="min-w-0 flex-[3_1_620px]"
           />
           <span className="flex min-w-0 max-w-[480px] flex-[2_1_320px] flex-col justify-center gap-4 p-[clamp(24px,4vw,56px)]">
-            <span className="flex items-center gap-3">
-              <span className={`size-3.5 rounded-full ${typeColours[event.type]}`} />
-              <span className="label text-ink-subtle">{event.type}</span>
+            <span className="flex flex-wrap items-center gap-x-5 gap-y-2">
+              {event.types.map((type) => (
+                <span key={type} className="flex items-center gap-3">
+                  <span className={`size-3.5 rounded-full ${typeColours[type]}`} />
+                  <span className="label text-ink-subtle">{type}</span>
+                </span>
+              ))}
             </span>
             <span className="font-serif text-[clamp(40px,4.4vw,64px)] leading-[0.95]">{event.name}</span>
             <span className="font-mono text-sm text-red">
